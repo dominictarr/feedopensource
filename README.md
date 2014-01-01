@@ -1,0 +1,6 @@
+# thisisnotastartup
+
+
+## License
+
+MIT
