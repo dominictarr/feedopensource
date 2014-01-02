@@ -1,18 +1,11 @@
 {
-  "name": "thisisnotastartup",
-  "description": "",
+  "name": "feedopensource",
+  "description": "iteratively fund open-source projects",
   "version": "0.0.0",
-  "homepage": "https://github.com/dominictarr/thisisnotastartup",
+  "homepage": "https://github.com/dominictarr/feedopensource",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dominictarr/thisisnotastartup.git"
-  },
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
-  "scripts": {
-    "test": "set -e; for t in test/*.js; do node $t; done"
+    "url": "git://github.com/dominictarr/feedopensource.git"
   },
   "author": "Dominic Tarr <dominic.tarr@gmail.com> (dominictarr.com)",
   "license": "MIT"
