@@ -1,33 +1,19 @@
 # Feed Open Source
 
 We need another way to fund software. All the ways we currently use are
-[broken or unscalable]
-(http://dominictarr.com/post/71958587606/some-thoughts-on-the-economics-of-software-development). We need a model that
+[broken or unscalable](
+http://dominictarr.com/post/71958587606/some-thoughts-on-the-economics-of-software-development). We need a model that
 Aligns the interests of the users of the software with it's creators,
-while also working with the natural, (post-scarcity) physics of data
+while also working with the natural, copy-to-distribute, physics of data
 
 So, I present feedopensource!
 
 ## TL;DR
 
-request features and post issues as normal [https://github.com/dominictarr/feedopensource/issues),
-but then group (say) two weeks worth of features/bugs into an iteration
-which may be crowd-funded. After each iteration, clients use the trial the new version,
-provide feedback and if they are happy with progress, fund the next stage.
-
-## This Is NOT a Startup.
-
-This is not a platform, or Anything as a Service.
-This is just on open source tool for feeding open source developers.
-But this is also a tool for aligning a developers interests with your own
-(don't bite the hand that feeds you)
-
-feedopensource will not take any fees, have plans to signup to,
-and doesn't charge anything for it's own use.
-There is no terms of service that may change without notice.
-
-What there is: an liberal open source license, you may use feedopensource
-to fund your own project, as feedopensource uses feedopensource to feed itself!
+Request features and post issues as-per normal [https://github.com/dominictarr/feedopensource/issues),
+but then group (say) two weeks worth of features/bugs into an "iteration"
+which may be crowd-funded. After each iteration, clients trial the new version,
+provide feedback and if they are happy with progress, continue to fund the project.
 
 ## The Problem
 
@@ -45,8 +31,8 @@ If you want a website or an app or anything, and do not have the desire or
 the ability to create it your self, this is probably the most common way get new software!
 
 See this blog post for a deeper look into
-[the economics of software development]
-(http://dominictarr.com/post/71958587606/some-thoughts-on-the-economics-of-software-development)
+[the economics of software development](
+http://dominictarr.com/post/71958587606/some-thoughts-on-the-economics-of-software-development)
 
 ## The Vision
 
@@ -69,20 +55,37 @@ Since a `Client` is able to monitor the progress that a project is making,
 they may well end up funding a project a lot _more_, because most of the uncertainty
 of the potential success of a project is removed.
 
+## This Is NOT a Startup.
+
+This is not a platform, or Anything as a Service.
+This is just on open source tool for feeding open source.
+But this is also a tool for aligning a developers interests with your own.
+(don't bite the hand that feeds you)
+
+feedopensource will not take any fees, have plans to signup to,
+and doesn't charge anything for you to use it.
+There is no terms of service that may change without notice.
+
+What there is: an [liberal open-source license](./LICENSE), you may use feedopensource
+to fund your own project, as feedopensource uses feedopensource to feed itself!
+
 ## The Prototype
 
 The first project that should be funded with ThisIsNotAStartup is ThisIsNotAStartup itself.
 
-Here is a _very simple_ prototype. Transfer money into this bitcoin wallet: [wallet_id]
-As the money in the wallet approaches my target 1.2 btc (about $1000 USD)
-you'll see the progress bar fill up, and then I'll begin on the next iteration.
+Here is a _very simple_ prototype. Transfer money into this bitcoin wallet:
+`1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu` As the money in the wallet approaches the
+target 1.2 btc (about $1000 USD) you'll see the progress bar fill up,
+and then I'll begin on the next iteration.
 
+[progress bar](http://feedopensource.com/progbar/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2
 [bar]
 
 The progress bar is just a simple png that you can embed into github issues, or even an email!
 
-If you'd like to fund this idea if it wasn't with bitcoin please comment on this issue here
-[BITCOIN_ISSUE]
+If you'd like to fund this idea if it wasn't with bitcoin please comment on this issue here:
+[I would fund this if it wasn't with bitcoins](https://github.com/dominictarr/feedopensource/issues/6)
+
 
 ## The Plan
 
@@ -95,22 +98,26 @@ feedopensoure will be implemented as a bot that posts to and scrapes/api Github.
 This avoids the problem of having to implement a fresh discussion platform, Notifications,
 User system, etc!
 
-## The workflow:
+This is gonna use bitcoin, because 1) bitcoin is open source money and 2)
+bitcoin is so much easier to build services on top of than regular money.
 
-* `Clients` (users who may fund) post issues describing `Features` to be added or `Bugs` to be fixed. ("Tasks")
-* Then, `Tasks` will be grouped into an `Iteration`
-  (an `Iteration` is just an issue that links to a set of `Tasks`, and contains a progress bar png)
+## The Workflow:
+
+* `Clients` (users who may fund) post issues describing `Features` to be added or `Bugs` to be fixed.
+  ([Tasks](https://github.com/dominictarr/feedopensource/issues/1))
+* Then, `Tasks` will be grouped into an [Iteration](https://github.com/dominictarr/feedopensource/issues/3)
+  (an `Iteration` is just an issue that links to a set of `Tasks`, and contains a
+  [progress bar](https://github.com/dominictarr/feedopensource/issues/2))
   `Clients` and `Developers` can discuss that iteration, and decide to fund it or not.
   Once funding is complete, the developers decide whether to accept it or not, and then work commences.
 * progress can be tracked by posting to the `Iteration` issue, or to the Task issues.
-* once the Iteration is complete, the issue is closed.
-* ThisIsNotAStartup will have a few aggregations to show project history and status,
-  (available as a separate web app)
-* there will be pngs representing project status and history which can be added into github
+  as the Tasks progress (are closed) the progress bar updates.
+* Once the Iteration is complete, the issue is closed.
+* there will be progress bar pngs representing project status and history which can easily be added into github
   issues and readmes.
-* Users must have a way to associate a bitcoin wallet (which they pay from) with a github account,
-  (this can be acomplished via the "sign message" bitcoin feature. Users will sign a message claiming that
-  "I am {username}, and I paid {transaction}" and then posting it to the Iteration they are funding.)
+* Users will have a way to associate a bitcoin wallet with a github account, to
+  [claim their payment](https://github.com/dominictarr/feedopensource/issues/5)
 
-Please comment here! [Iteration 1](https://github.com/dominictarr/feedopensource/issues/5)
+please fund the first iteration by making a payment to: `1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu`
+and discuss here: [Iteration 1](https://github.com/dominictarr/feedopensource/issues/5)
 
