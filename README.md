@@ -71,21 +71,19 @@ to fund your own project, as feedopensource uses feedopensource to feed itself!
 
 ## The Prototype
 
-The first project that should be funded with ThisIsNotAStartup is ThisIsNotAStartup itself.
+Here is a _very simple_ prototype. On github I have a description about
+how the [next iteration](https://github.com/dominictarr/feedopensource/issues) will work.
 
-Here is a _very simple_ prototype. Transfer money into this bitcoin wallet:
-`1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu` As the money in the wallet approaches the
-target 1.2 btc (about $1000 USD) you'll see the progress bar fill up,
-and then I'll begin on the next iteration.
+Transfer money into this bitcoin wallet `1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu`
+As the money in the wallet approaches the target 1.2 btc (about $1000 USD)
+you'll see the progress bar fill up, and then I'll begin on the next iteration.
 
-[progress bar](http://feedopensource.com/progbar/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2
-[bar]
+[![progress bar](/badge/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2)](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)
 
 The progress bar is just a simple png that you can embed into github issues, or even an email!
 
 If you'd like to fund this idea if it wasn't with bitcoin please comment on this issue here:
 [I would fund this if it wasn't with bitcoins](https://github.com/dominictarr/feedopensource/issues/6)
-
 
 ## The Plan
 
@@ -118,6 +116,7 @@ bitcoin is so much easier to build services on top of than regular money.
 * Users will have a way to associate a bitcoin wallet with a github account, to
   [claim their payment](https://github.com/dominictarr/feedopensource/issues/5)
 
-please fund the first iteration by making a payment to: `1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu`
+Please fund the first iteration by making a payment to:
+[1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)
 and discuss here: [Iteration 1](https://github.com/dominictarr/feedopensource/issues/5)
 
