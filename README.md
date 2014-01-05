@@ -41,13 +41,13 @@ Work is funded in iterations, on a fixed time basis, a week or two at a time.
 Then the `Developers` do their best to implement that, and then the `Clients` are able
 to use the results and provide feedback. Then the next iteration is negioated.
 Every one is constantly in the loop, and the Clients are able to refocus
-development (because nothing is forcing them to fund the next iteration).
-As they see development progress from a prototype towards a finished product,
-`Clients` get a much clearer idea of what is possible and what is not.
+development. At the same time, the `Clients` can see the project improving, and so
+get a more accurate understanding of the software development process.
 
-The difference between this and agile consulting is that "the clients"
+The difference between this and typical agile consulting is that "the clients"
 are a crowd of people. The difference between this and current crowdfunding
-platforms is that Clients will have real power to influence a project.
+platforms is that Clients will have real power to influence a project,
+and keep it on task.
 
 Since a `Client` does not commit all their money at once, the `Developers`
 must keep them happy if are to continue to recieve funding.
@@ -55,7 +55,7 @@ Since a `Client` is able to monitor the progress that a project is making,
 they may well end up funding a project a lot _more_, because most of the uncertainty
 of the potential success of a project is removed.
 
-## This Is NOT a Startup.
+## This is _not_ a startup.
 
 This is not a platform, or Anything as a Service.
 This is just on open source tool for feeding open source.
@@ -71,8 +71,8 @@ to fund your own project, as feedopensource uses feedopensource to feed itself!
 
 ## The Prototype
 
-Here is a _very simple_ prototype. On github I have a description about
-how the [next iteration](https://github.com/dominictarr/feedopensource/issues) will work.
+Here is a _very simple_ prototype. On github I have a description of the goals for the
+[next iteration](https://github.com/dominictarr/feedopensource/issues).
 
 Transfer money into this bitcoin wallet `1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu`
 As the money in the wallet approaches the target 1.2 btc (about $1000 USD)
@@ -82,8 +82,8 @@ you'll see the progress bar fill up, and then I'll begin on the next iteration.
 
 The progress bar is just a simple png that you can embed into github issues, or even an email!
 
-If you'd like to fund this idea if it wasn't with bitcoin please comment on this issue here:
-[I would fund this if it wasn't with bitcoins](https://github.com/dominictarr/feedopensource/issues/6)
+If you would fund this if it wasn't with bitcoin please comment on
+[this issue](https://github.com/dominictarr/feedopensource/issues/6)
 
 ## The Plan
 
