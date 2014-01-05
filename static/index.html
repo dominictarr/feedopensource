@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel=stylesheet href=./style.css>
+    <title>feedopensource</title>
+  </head>
+  <body>
+    <div id=content>
+    <h1 id="feed-open-source">Feed Open Source</h1>
+<p>We need another way to fund software. All the ways we currently use are
+<a href="http://dominictarr.com/post/71958587606/some-thoughts-on-the-economics-of-software-development">broken or unscalable</a>. We need a model that
+Aligns the interests of the users of the software with it&#39;s creators,
+while also working with the natural, copy-to-distribute, physics of data</p>
+<p>So, I present feedopensource!</p>
+<h2 id="tl-dr">TL;DR</h2>
+<p>Request features and post issues as-per normal [<a href="https://github.com/dominictarr/feedopensource/issues">https://github.com/dominictarr/feedopensource/issues</a>),
+but then group (say) two weeks worth of features/bugs into an &quot;iteration&quot;
+which may be crowd-funded. After each iteration, clients trial the new version,
+provide feedback and if they are happy with progress, continue to fund the project.</p>
+<h2 id="the-problem">The Problem</h2>
+<p>Software only needs to be written once. Bugs need to be patched,
+but a bug only needs to be patched once. Why do we pay for software so many times?</p>
+<p>Either, you purchase licenses to private code (each customer paying again)
+or you rent the software (&quot;As A Service&quot;), or worse of all,
+you use a free service, but where your data will be mined for various purposes
+(the most benign of which is advertising)</p>
+<p>But, there is one business model where you actually pay for the work of creating
+that software directly. You can hire a consulting company to create you bespoke software.
+If you want a website or an app or anything, and do not have the desire or
+the ability to create it your self, this is probably the most common way get new software!</p>
+<p>See this blog post for a deeper look into
+<a href="http://dominictarr.com/post/71958587606/some-thoughts-on-the-economics-of-software-development">the economics of software development</a></p>
+<h2 id="the-vision">The Vision</h2>
+<p>Work is funded in iterations, on a fixed time basis, a week or two at a time.
+<code>Clients</code> and <code>Developers</code> negioate what features they most need or are able to build within the timeframe.
+Then the <code>Developers</code> do their best to implement that, and then the <code>Clients</code> are able
+to use the results and provide feedback. Then the next iteration is negioated.
+Every one is constantly in the loop, and the Clients are able to refocus
+development (because nothing is forcing them to fund the next iteration).
+As they see development progress from a prototype towards a finished product,
+<code>Clients</code> get a much clearer idea of what is possible and what is not.</p>
+<p>The difference between this and agile consulting is that &quot;the clients&quot;
+are a crowd of people. The difference between this and current crowdfunding
+platforms is that Clients will have real power to influence a project.</p>
+<p>Since a <code>Client</code> does not commit all their money at once, the <code>Developers</code>
+must keep them happy if are to continue to recieve funding.
+Since a <code>Client</code> is able to monitor the progress that a project is making,
+they may well end up funding a project a lot <em>more</em>, because most of the uncertainty
+of the potential success of a project is removed.</p>
+<h2 id="this-is-not-a-startup-">This Is NOT a Startup.</h2>
+<p>This is not a platform, or Anything as a Service.
+This is just on open source tool for feeding open source.
+But this is also a tool for aligning a developers interests with your own.
+(don&#39;t bite the hand that feeds you)</p>
+<p>feedopensource will not take any fees, have plans to signup to,
+and doesn&#39;t charge anything for you to use it.
+There is no terms of service that may change without notice.</p>
+<p>What there is: an <a href="./LICENSE">liberal open-source license</a>, you may use feedopensource
+to fund your own project, as feedopensource uses feedopensource to feed itself!</p>
+<h2 id="the-prototype">The Prototype</h2>
+<p>Here is a <em>very simple</em> prototype. On github I have a description about
+how the <a href="https://github.com/dominictarr/feedopensource/issues">next iteration</a> will work.</p>
+<p>Transfer money into this bitcoin wallet <code>1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu</code>
+As the money in the wallet approaches the target 1.2 btc (about $1000 USD)
+you&#39;ll see the progress bar fill up, and then I&#39;ll begin on the next iteration.</p>
+<p><a href="bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu"><img src="/badge/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2" alt="progress bar"></a></p>
+<p>The progress bar is just a simple png that you can embed into github issues, or even an email!</p>
+<p>If you&#39;d like to fund this idea if it wasn&#39;t with bitcoin please comment on this issue here:
+<a href="https://github.com/dominictarr/feedopensource/issues/6">I would fund this if it wasn&#39;t with bitcoins</a></p>
+<h2 id="the-plan">The Plan</h2>
+<p><code>Clients</code> and <code>Developers</code> create <code>Tasks</code> and plan <code>Iterations</code> by posting
+issues (on github or similar web-based issue tracking software or discussion platform,
+so that feedopensource will be not entangled with github, although for simplicity,
+I&#39;ll just say &quot;Github&quot; but I mean any issue tracker/repo manager)</p>
+<p>feedopensoure will be implemented as a bot that posts to and scrapes/api Github.
+This avoids the problem of having to implement a fresh discussion platform, Notifications,
+User system, etc!</p>
+<p>This is gonna use bitcoin, because 1) bitcoin is open source money and 2)
+bitcoin is so much easier to build services on top of than regular money.</p>
+<h2 id="the-workflow-">The Workflow:</h2>
+<ul>
+<li><code>Clients</code> (users who may fund) post issues describing <code>Features</code> to be added or <code>Bugs</code> to be fixed.
+(<a href="https://github.com/dominictarr/feedopensource/issues/1">Tasks</a>)</li>
+<li>Then, <code>Tasks</code> will be grouped into an <a href="https://github.com/dominictarr/feedopensource/issues/3">Iteration</a>
+(an <code>Iteration</code> is just an issue that links to a set of <code>Tasks</code>, and contains a
+<a href="https://github.com/dominictarr/feedopensource/issues/2">progress bar</a>)
+<code>Clients</code> and <code>Developers</code> can discuss that iteration, and decide to fund it or not.
+Once funding is complete, the developers decide whether to accept it or not, and then work commences.</li>
+<li>progress can be tracked by posting to the <code>Iteration</code> issue, or to the Task issues.
+as the Tasks progress (are closed) the progress bar updates.</li>
+<li>Once the Iteration is complete, the issue is closed.</li>
+<li>there will be progress bar pngs representing project status and history which can easily be added into github
+issues and readmes.</li>
+<li>Users will have a way to associate a bitcoin wallet with a github account, to
+<a href="https://github.com/dominictarr/feedopensource/issues/5">claim their payment</a></li>
+</ul>
+<p>Please fund the first iteration by making a payment to:
+<a href="bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu">1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu</a>
+and discuss here: <a href="https://github.com/dominictarr/feedopensource/issues/5">Iteration 1</a></p>
+
+
+    </div>
+  <body>
+<html>
