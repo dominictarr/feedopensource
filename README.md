@@ -88,9 +88,7 @@ If you would fund this if it wasn't with bitcoin please comment on
 ## The Plan
 
 `Clients` and `Developers` create `Tasks` and plan `Iterations` by posting
-issues (on github or similar web-based issue tracking software or discussion platform,
-so that feedopensource will be not entangled with github, although for simplicity,
-I'll just say "Github" but I mean any issue tracker/repo manager)
+issues (on github or [similar](https://github.com/dominictarr/feedopensource/issues/7))
 
 feedopensoure will be implemented as a bot that posts to and scrapes/api Github.
 This avoids the problem of having to implement a fresh discussion platform, Notifications,
@@ -99,7 +97,7 @@ User system, etc!
 This is gonna use bitcoin, because 1) bitcoin is open source money and 2)
 bitcoin is so much easier to build services on top of than regular money.
 
-## The Workflow:
+## The Workflow
 
 * `Clients` (users who may fund) post issues describing `Features` to be added or `Bugs` to be fixed.
   ([Tasks](https://github.com/dominictarr/feedopensource/issues/1))
@@ -115,6 +113,8 @@ bitcoin is so much easier to build services on top of than regular money.
   issues and readmes.
 * Users will have a way to associate a bitcoin wallet with a github account, to
   [claim their payment](https://github.com/dominictarr/feedopensource/issues/5)
+
+## Feed me
 
 Please fund the first iteration by making a payment to:
 [1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)
