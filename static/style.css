@@ -1,8 +1,22 @@
 #content {
   width: 600px;
   margin: auto;
+  color: #333333;
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  box-shadow: 5px 3px 5px hsla(0,0%,50%,0.1);
+//;
 }
 
-.h1 {
+body {
+  background-color: #eeeeee;
+
+}
+
+h1, h2 {
   font-family: Serif;
+  border-bottom: 1px dotted hsla(0, 10%, 20%, 0.3);
 }
