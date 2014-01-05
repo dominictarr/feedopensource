@@ -8,5 +8,18 @@
     "url": "git://github.com/dominictarr/feedopensource.git"
   },
   "author": "Dominic Tarr <dominic.tarr@gmail.com> (dominictarr.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "tiny-route": "~2.1.0",
+    "stack": "~0.1.0",
+    "ecstatic": "~0.4.13",
+    "btcprogress": "*"
+  },
+  "devDependencies": {
+    "carpenter": "0.1",
+    "himark": "1.0"
+  },
+  "scripts": {
+    "build": "carpenter templates/index.html > static/index.html"
+  }
 }
