@@ -19,7 +19,9 @@
     "carpenter": "0.1",
     "himark": "1.0"
   },
+  "bin": "./index.js",
   "scripts": {
-    "build": "carpenter templates/index.html > static/index.html"
+    "build": "carpenter templates/index.html > static/index.html",
+    "run": "./index.js"
   }
 }
