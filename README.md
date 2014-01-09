@@ -37,20 +37,20 @@ http://dominictarr.com/post/71958587606/some-thoughts-on-the-economics-of-softwa
 ## The Vision
 
 Work is funded in iterations, on a fixed time basis, a week or two at a time.
-Clients and developers negioate what features they most need or are able to
-build within the timeframe. Then the developers do their best to implement that,
+Clients and developers negotiate what features they most need or are able to
+build within the time-frame. Then the developers do their best to implement that,
 and then the clients are able to use the results and provide feedback. Then
-the next iteration is negioated. Every one is constantly in the loop. At the
+the next iteration is negotiate. Every one is constantly in the loop. At the
 same time, the clients can see the project improving, and so get a more accurate
 understanding of the software development process.
 
 The difference between this and typical agile consulting is that "the clients"
-are a crowd of people. The difference between this and current crowdfunding
+are a crowd of people. The difference between this and current crowd-funding
 platforms is that Clients will have real power to influence a project,
 and keep it on task.
 
 Since a client does not have to commit all their money at once, the developers
-must keep them satisified if are to continue to recieve funding.
+must keep them satisfied if are to continue to receive funding.
 For the client, most of the uncertainty about the project is removed.
 They may well end up funding it even more, because they do not need to weigh up
 the cost of funding against their estimations of the projects success.
@@ -62,7 +62,7 @@ This is just on open source tool for feeding open source.
 But this is also a tool for aligning a developers interests with your own.
 (don't bite the hand that feeds you)
 
-`feedopensource` will not take any fees, have plans to signup to,
+`feedopensource` will not take any fees, have plans to sign up to,
 and doesn't charge anything for you to use it.
 There is no terms of service that may change without notice.
 
