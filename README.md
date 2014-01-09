@@ -4,7 +4,7 @@ We need another way to fund software. All the other ways are
 [broken or unscalable](
 http://dominictarr.com/post/71958587606/some-thoughts-on-the-economics-of-software-development).
 We need to align the interests of the users with developers,
-Feeding developers, while still allowing software to be copied freely.
+Feeding developers, while still allowing software to be distributed freely.
 
 ## The Problem
 
@@ -16,7 +16,7 @@ Software should be paid for exactly once.
 
 You can't sell software like you sell physical items,
 because software is too easy to copy.
-But what you _can sell_ is _a promise to write software_
+But you can sell _a promise to write software_
 
 ## The Vision
 
@@ -26,41 +26,43 @@ Work is funded in iterations, on a fixed time basis, a week or two at a time.
 Clients and developers negotiate what features they are most need in the next iteration.
 The developers implement that, and the clients evaluate it. Repeat.
 Every one is constantly in the loop.
-The clients can see the project improving, and so get a more accurate
-understanding of the software development process.
-The developers don't have to make ambitious promises that will be hard to keep,
-and may be the wrong idea anyway!
 
-The difference between this and agile consulting is that "the clients"
-are a crowd of people. The difference between this and current crowd-funding
-platforms is that Clients will have real power to influence a project,
+'feedopensource` is different to agile consulting because "the clients"
+are a crowd of people. 'feedopensource` is different to current crowd-funding
+platforms because Clients will have real power to influence a project,
 and keep it on task.
 
-Since a client does not have to commit all their money at once, the developers
-must keep them satisfied if are to continue to receive funding.
-For the client, most of the uncertainty about the project is removed.
-They may well end up funding it even more, because they do not need to weigh up
-the cost of funding against their estimations of the projects success.
+A client does not commit all their money at once, so the developers
+must keep them satisfied to continue to receive funding.
+For the client, most of the uncertainty about the project is removed,
+because they see it improve at each stage.
+
+Less uncertainty means they can fund more,
+because they know the value they are getting.
 
 ## This is _not_ a startup.
 
-This is not a platform, or Anything as a Service.
-This is just on open source tool for feeding open source.
-`feedopensource` will not take any fees, have plans to sign up to,
-and doesn't charge anything for you to use it.
-There is no terms of service that may change without notice.
+This is not Anything as a Service.  
+This is not a X-Platform.  
 
-What there is: an [liberal open-source license](./LICENSE), you may use `feedopensource`
-to fund your own project, as `feedopensource` uses `feedopensource` to feed itself!
+This is just an open source tool for feeding open source.  
+
+`feedopensource` will not take any fees, nor have plans to sign up to.
+`feedopensource` does not have a terms of service that may change without notice.
+
+instead: [a liberal open-source license](./LICENSE).
+you may use `feedopensource` to fund your own project,
+as `feedopensource` uses `feedopensource` to feed itself!
 
 ## The Prototype
 
-Here is a _very simple_ prototype. On github I have a description of the goals for the
+You are looking at a _very simple_ prototype.
+On github I have a description of the goals for the
 [next iteration](https://github.com/dominictarr/feedopensource/issues/5).
 
 Transfer money into this bitcoin wallet `1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu`
-As the money in the wallet approaches the target 1.2 btc (about $1000 USD)
-you'll see the progress bar fill up, and then I'll begin on the next iteration.
+and as the funds approach the target (1.2 btc, about $1000 USD)
+you'll see the progress bar fill up. then I'll begin on the next iteration.
 
 [![progress bar](http://feedopensource.com/badge/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2)](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)
 
@@ -81,12 +83,14 @@ If you would fund this if it wasn't with bitcoin please comment on
 This avoids the problem of having to implement a fresh discussion platform, Notifications,
 User system, etc!
 
-This is gonna use bitcoin, because 1) bitcoin is open source money and 2)
+We will use  bitcoin, because 1) bitcoin is open source money and 2)
 bitcoin is so much easier to build services on top of than regular money.
 
-Please comment on the [first iteration!](
+Please comment on the [first iteration!](https://github.com/dominictarr/feedopensource/issues/4)
 
 ## The Workflow
+
+In the future you might use `feedopensource` like this:
 
 * `Clients` (users who may fund) post issues describing `Features` to be added or `Bugs` to be fixed.
   ([Tasks](https://github.com/dominictarr/feedopensource/issues/1))
