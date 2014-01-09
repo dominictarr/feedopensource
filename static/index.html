@@ -11,14 +11,13 @@
 <p>We need another way to fund software. All the other ways are
 <a href="http://dominictarr.com/post/71958587606/some-thoughts-on-the-economics-of-software-development">broken or unscalable</a>.
 We need to align the interests of the users with developers.
-We need to feeding developers, but still allow software to be distributed freely.</p>
+We need to feed developers, and the software needs to be freely distributable.</p>
 <h2 id="the-problem">The Problem</h2>
-<p>Software only needs to be written once. Bugs need to be patched,
-but a bug only needs to be patched once.</p>
+<p>Software only needs to be written once.<br>Bugs need to be patched, but a bug only needs to be patched once.</p>
 <p>Why do we pay for software many times, or not at all?<br>Software should be paid for exactly once.</p>
 <p>You can&#39;t sell software like you sell physical items,
-because software is too easy to copy.</p>
-<p>What you can sell: <em>a promise to write software</em></p>
+software is too easy to copy.</p>
+<p>But here is something you can sell: <em>a promise to write software</em></p>
 <h2 id="the-vision">The Vision</h2>
 <p>Take agile consulting to the crowds.</p>
 <p>Work is funded in iterations, on a fixed time basis, a week or two at a time.
@@ -38,23 +37,19 @@ because they know the value they are getting.</p>
 <h2 id="this-is-_not_-a-startup-">This is <em>not</em> a startup.</h2>
 <p>This is not Anything as a Service.<br>This is not an Anything-Platform.  </p>
 <p>This is just an open source tool for feeding open source projects.  </p>
-<p><em>feedopensource</em> will not take any fees, nor have plans to sign up to. 
-<em>feedopensource</em> does not have a terms of service that may change without notice.</p>
-<p><em>feedopensource</em> has a <a href="./LICENSE">liberal open-source license</a>.
-you may use <em>feedopensource</em> to fund your own projects,
+<p><em>feedopensource</em> has a <a href="./LICENSE">liberal open-source license</a>.</p>
+<p>You may use <em>feedopensource</em> to fund your own projects,
 as <em>feedopensource</em> feeds it self with <em>feedopensource</em></p>
 <h2 id="the-prototype">The Prototype</h2>
 <p>You are looking at a <em>very simple</em> prototype.
-On github I have a description of the goals for the
+deposit btc into <code>1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu</code> to fund the
 <a href="https://github.com/dominictarr/feedopensource/issues/5">next iteration</a>.</p>
-<p>Transfer money into this bitcoin wallet <code>1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu</code>
-and as the funds approach the target (1.2 btc, about $1000 USD)
-you&#39;ll see the progress bar fill up. then I&#39;ll begin on the next iteration.</p>
 <p><a href="bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu"><img src="http://feedopensource.com/badge/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2" alt="progress bar"></a></p>
-<p>The progress bar is just a simple png that you can embed into github issues, or even an email!</p>
+<p>As the funds approach the target (1.2 btc, about $1000 USD)
+you&#39;ll see the progress bar fill up. then I&#39;ll begin on the next iteration.</p>
 <p>Please <a href="mailto:dominic.tarr@gmail.com">email me</a> after your payment with the transaction id.
 also see <a href="https://github.com/dominictarr/feedopensource/issues/5">this issue</a></p>
-<p>If you would fund this if it wasn&#39;t with bitcoin please comment on
+<p>If you would rather fund this with regular money please comment on
 <a href="https://github.com/dominictarr/feedopensource/issues/6">this issue</a></p>
 <h2 id="the-plan">The Plan</h2>
 <p><code>Clients</code> and <code>Developers</code> post issues to <code>Tasks</code> and plan <code>Iterations</code>.
@@ -62,24 +57,20 @@ also see <a href="https://github.com/dominictarr/feedopensource/issues/5">this i
 <p><em>feedopensoure</em> will be implemented as a bot that posts to and scrapes/apis Github.
 This avoids the problem of having to implement a fresh discussion platform, Notifications,
 User system, etc!</p>
-<p>We will use  bitcoin, because 1) bitcoin is open source money and 2)
-bitcoin is so much easier to build services on top of than regular money.</p>
 <p>Please comment on the <a href="https://github.com/dominictarr/feedopensource/issues/4">first iteration!</a></p>
 <h2 id="the-workflow">The Workflow</h2>
 <p>In the future you might use <em>feedopensource</em> like this:</p>
 <ul>
-<li><code>Clients</code> (users who may fund) post issues describing <code>Features</code> to be added or <code>Bugs</code> to be fixed.
+<li><code>Clients</code> post issues requesting features or bug fixes.
 (<a href="https://github.com/dominictarr/feedopensource/issues/1">&quot;Tasks&quot;</a>)</li>
-<li>Then, <code>Tasks</code> will be grouped into an <a href="https://github.com/dominictarr/feedopensource/issues/3">Iteration</a>
+<li><code>Tasks</code> are grouped into an <a href="https://github.com/dominictarr/feedopensource/issues/3">Iteration</a>
 (an <code>&quot;Iteration&quot;</code> is just an issue that links to a set of <code>Tasks</code> with a
 <a href="https://github.com/dominictarr/feedopensource/issues/2">progress bar</a>)
-<code>Clients</code> and <code>Developers</code> can discuss that iteration, and decide to fund it or not.
-Once funding is complete, the developers decide whether to accept it or not, and then work commences.</li>
+<code>Clients</code> and <code>Developers</code> can discuss that iteration, and decide to fund it or not.</li>
 <li>progress can be tracked by posting to the <code>Iteration</code> issue, or to the Task issues.
-as the Tasks progress (are closed) the progress bar updates.</li>
-<li>Once the Iteration is complete, the issue is closed.</li>
-<li>there will be progress bar pngs representing project status and history which can easily be added into github
-issues and readmes.</li>
+as the Tasks progress (are closed) the progress bar updates, this time to show work done.</li>
+<li>There will be progress bar pngs representing project status and history which can easily 
+be added into github issues and readmes.</li>
 <li>Users will have a way to associate a bitcoin wallet with a github account, so they can
 <a href="https://github.com/dominictarr/feedopensource/issues/5">claim their payment</a></li>
 </ul>
