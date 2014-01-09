@@ -20,15 +20,15 @@ continue to fund the project.
 Software only needs to be written once. Bugs need to be patched,
 but a bug only needs to be patched once. Why do we pay for software so many times?
 
-Either, you purchase licenses to private code (each customer paying again)
+Either, you purchase licenses to private code (each customer paying each time)
 or you rent the software ("As A Service"), or worse of all,
 you use a free service, but where your data will be mined for various purposes
 (the most benign of which is advertising)
 
 But, there is one business model where you actually pay for the work of creating
-that software directly. You can hire a consulting company to create you bespoke software.
-If you want a website or an app or anything, and do not have the desire or
-the ability to create it your self, this is probably the most common way get new software!
+that software directly. You can hire a consulting company to create bespoke software for you.
+If you want a website but do not have the desire or
+the ability to create it yourself this is probably the most common way get new software!
 
 See this blog post for a deeper look into
 [the economics of software development](
@@ -40,8 +40,8 @@ Work is funded in iterations, on a fixed time basis, a week or two at a time.
 Clients and developers negotiate what features they most need or are able to
 build within the time-frame. Then the developers do their best to implement that,
 and then the clients are able to use the results and provide feedback. Then
-the next iteration is negotiate. Every one is constantly in the loop. At the
-same time, the clients can see the project improving, and so get a more accurate
+the next iteration is negotiated, every one is constantly in the loop.
+The clients can see the project improving, and so get a more accurate
 understanding of the software development process.
 
 The difference between this and typical agile consulting is that "the clients"
