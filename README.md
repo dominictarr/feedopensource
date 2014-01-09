@@ -52,7 +52,8 @@ This is just an open source tool for feeding open source projects.
 *feedopensource* does not have a terms of service that may change without notice.
 
 *feedopensource* has a [liberal open-source license](./LICENSE).
-you may use *feedopensource* to fund your own projects,
+
+You may use *feedopensource* to fund your own projects,
 as *feedopensource* feeds it self with *feedopensource*
 
 ## The Prototype
