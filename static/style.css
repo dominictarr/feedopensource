@@ -1,5 +1,5 @@
 #content {
-  width: 600px;
+  width: 900px;
   margin: auto;
   color: #333333;
   background-color: #ffffff;
@@ -13,10 +13,16 @@
 
 body {
   background-color: #eeeeee;
+}
 
+p {
+  font-size: 1.5em;
+  color: #3d3d3d;
+  line-height: 1.4em;
 }
 
 h1, h2 {
+  font-size: 2em;
   font-family: Serif;
-  border-bottom: 1px dotted hsla(0, 10%, 20%, 0.3);
+  border-bottom: 1px dotted hsla(0, 100%, 50%, 0.5);
 }
