@@ -64,7 +64,7 @@ then I will begin the [next iteration](https://github.com/dominictarr/feedopenso
 
 ### bitcoin
 
-btc into `1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu`
+Transfer btc into `1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu`
 
 Please post a comment [here](https://github.com/dominictarr/feedopensource/issues/4)
 with your transaction id.
@@ -75,7 +75,7 @@ Also see [this issue](https://github.com/dominictarr/feedopensource/issues/5)
 ### credit-card
 
 If you would rather fund this with normal money please
-comment with the amount you'd like to give on this issue
+comment with the amount you'd like to pay on
 [this issue](https://github.com/dominictarr/feedopensource/issues/6)
 
 ## The Plan
