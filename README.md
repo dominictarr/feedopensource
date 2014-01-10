@@ -64,8 +64,10 @@ deposit btc into `1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu` to fund the
 As the funds approach the target (1.2 btc, about $1000 USD)
 you'll see the progress bar fill up. then I'll begin on the next iteration.
 
-Please [email me](mailto:dominic.tarr@gmail.com) after your payment with the transaction id.
-also see [this issue](https://github.com/dominictarr/feedopensource/issues/5)
+Please post a comment [here](https://github.com/dominictarr/feedopensource/issues/4)
+with your transaction id.
+
+Also see [this issue](https://github.com/dominictarr/feedopensource/issues/5)
 
 If you would rather fund this with regular money please comment on
 [this issue](https://github.com/dominictarr/feedopensource/issues/6)
