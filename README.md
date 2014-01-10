@@ -56,22 +56,26 @@ as *feedopensource* feeds itself with *feedopensource*
 ## The Prototype
 
 You are looking at a _very simple_ prototype.
-deposit btc into `1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu` to fund the
-[next iteration](https://github.com/dominictarr/feedopensource/issues/4).
 
 [![progress bar](http://feedopensource.com/badge/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2)](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)
 
-As the funds approach the target (1.2 btc, about $1000 USD)
-you'll see the progress bar fill up. Then I'll begin on the next iteration.
+As deposited fund reach the target $1000 USD, this progress bar fills.
+then I will begin the [next iteration](https://github.com/dominictarr/feedopensource/issues/4).
+
+### bitcoin
+
+btc into `1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu`
 
 Please post a comment [here](https://github.com/dominictarr/feedopensource/issues/4)
 with your transaction id.
 
 Not sure how to buy bitcoin? [Learn how you can buy bitcoin in your country](http://howtobuybitcoins.info)
-
 Also see [this issue](https://github.com/dominictarr/feedopensource/issues/5)
 
-If you would rather fund this with regular money please comment on
+### credit-card
+
+If you would rather fund this with normal money please
+comment with the amount you'd like to give on this issue
 [this issue](https://github.com/dominictarr/feedopensource/issues/6)
 
 ## The Plan
