@@ -57,7 +57,7 @@ as *feedopensource* feeds it self with *feedopensource*
 
 You are looking at a _very simple_ prototype.
 deposit btc into `1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu` to fund the
-[next iteration](https://github.com/dominictarr/feedopensource/issues/5).
+[next iteration](https://github.com/dominictarr/feedopensource/issues/4).
 
 [![progress bar](http://feedopensource.com/badge/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2)](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)
 
@@ -101,6 +101,6 @@ In the future you might use *feedopensource* like this:
 ## Feed me
 
 Please fund the first iteration by making a payment to:
-[1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)
-and discuss here: [Iteration 1](https://github.com/dominictarr/feedopensource/issues/5)
+[1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu) (check balance [here](https://blockchain.info/address/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu))
+and discuss here: [Iteration 1](https://github.com/dominictarr/feedopensource/issues/4)
 
