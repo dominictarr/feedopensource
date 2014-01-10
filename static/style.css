@@ -21,8 +21,11 @@ li, p {
   line-height: 1.4em;
 }
 
-h1, h2 {
-  font-size: 2em;
+h1, h2, h3 {
   font-family: Serif;
   border-bottom: 1px dotted hsla(0, 100%, 50%, 0.5);
 }
+
+h1 { font-size: 3em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
