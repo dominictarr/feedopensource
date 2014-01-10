@@ -1,5 +1,5 @@
 #content {
-  width: 900px;
+  max-width: 900px;
   margin: auto;
   color: #333333;
   background-color: #ffffff;
