@@ -67,6 +67,8 @@ you'll see the progress bar fill up. then I'll begin on the next iteration.
 Please post a comment [here](https://github.com/dominictarr/feedopensource/issues/4)
 with your transaction id.
 
+Not sure how to buy bitcoin? [Learn how you can buy bitcoin in your country](http://howtobuybitcoins.info)
+
 Also see [this issue](https://github.com/dominictarr/feedopensource/issues/5)
 
 If you would rather fund this with regular money please comment on
