@@ -29,7 +29,7 @@ The developers implement that, and the clients evaluate it. Repeat.
 Every one is constantly in the loop.
 
 *feedopensource* is different to agile consulting because "the clients"
-re a crowd of people.
+are a crowd of people.
 *feedopensource* is different to crowd-funding platforms because clients
 will have real power to influence a project, and keep it on task.
 
@@ -51,7 +51,7 @@ This is just an open source tool for feeding open source projects.
 *feedopensource* has a [liberal open-source license](./LICENSE).
 
 You may use *feedopensource* to fund your own projects,
-as *feedopensource* feeds it self with *feedopensource*
+as *feedopensource* feeds itself with *feedopensource*
 
 ## The Prototype
 
@@ -62,7 +62,7 @@ deposit btc into `1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu` to fund the
 [![progress bar](http://feedopensource.com/badge/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2)](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)
 
 As the funds approach the target (1.2 btc, about $1000 USD)
-you'll see the progress bar fill up. then I'll begin on the next iteration.
+you'll see the progress bar fill up. Then I'll begin on the next iteration.
 
 Please post a comment [here](https://github.com/dominictarr/feedopensource/issues/4)
 with your transaction id.
