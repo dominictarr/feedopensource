@@ -1,13 +1,15 @@
 
-var issues = require('./fixtures/issues.json')
+var issues        = require('./fixtures/issues.json')
 var collaborators = require('./fixtures/collaborators')
+var expected      = require('./fixtures/iterations.json')
+var iterations    = require('../lib/iterations')
 
-var iterations = require('../lib/iterations')
+var tape = require('tape')
 
-//var tape = require('tape')
+tape('issues', function (t) {
 
-//tape('issues', function (t) {
+  var actual = iterations(issues, collaborators, 'dominictarr', 'feedopensource')
+  t.deepEqual(actual, expected)
+  t.end()
 
-  console.log(iterations(issues, collaborators))
-
-//})
+})
