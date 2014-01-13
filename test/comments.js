@@ -1,6 +1,6 @@
 var tape = require('tape')
 
-var funders = require('../funders')
+var funders = require('../lib/funders')
 
 var comments = require('./fixtures/comments.json')
 var wallet   = require('./fixtures/wallet.json')
