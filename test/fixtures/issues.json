@@ -1,5 +1,50 @@
 [
   {
+    "url": "https://api.github.com/repos/dominictarr/feedopensource/issues/19",
+    "labels_url": "https://api.github.com/repos/dominictarr/feedopensource/issues/19/labels{/name}",
+    "comments_url": "https://api.github.com/repos/dominictarr/feedopensource/issues/19/comments",
+    "events_url": "https://api.github.com/repos/dominictarr/feedopensource/issues/19/events",
+    "html_url": "https://github.com/dominictarr/feedopensource/pull/19",
+    "id": 25511368,
+    "number": 19,
+    "title": "parse tasks from open iteration(s)",
+    "user": {
+      "login": "joates",
+      "id": 490654,
+      "avatar_url": "https://gravatar.com/avatar/60091579cd14b6052b33aa0072be84f9?d=https%3A%2F%2Fidenticons.github.com%2Fd52b7567532cac2a2e1c487986bfe76b.png&r=x",
+      "gravatar_id": "60091579cd14b6052b33aa0072be84f9",
+      "url": "https://api.github.com/users/joates",
+      "html_url": "https://github.com/joates",
+      "followers_url": "https://api.github.com/users/joates/followers",
+      "following_url": "https://api.github.com/users/joates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/joates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/joates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/joates/subscriptions",
+      "organizations_url": "https://api.github.com/users/joates/orgs",
+      "repos_url": "https://api.github.com/users/joates/repos",
+      "events_url": "https://api.github.com/users/joates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/joates/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "open",
+    "assignee": null,
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2014-01-13T17:00:57Z",
+    "updated_at": "2014-01-13T17:00:57Z",
+    "closed_at": null,
+    "pull_request": {
+      "html_url": "https://github.com/dominictarr/feedopensource/pull/19",
+      "diff_url": "https://github.com/dominictarr/feedopensource/pull/19.diff",
+      "patch_url": "https://github.com/dominictarr/feedopensource/pull/19.patch"
+    },
+    "body": "very basic, let me know if it's suitable?\r\ngit checkout dev-it01 && node it01/index.js"
+  },
+  {
     "url": "https://api.github.com/repos/dominictarr/feedopensource/issues/18",
     "labels_url": "https://api.github.com/repos/dominictarr/feedopensource/issues/18/labels{/name}",
     "comments_url": "https://api.github.com/repos/dominictarr/feedopensource/issues/18/comments",
@@ -485,14 +530,14 @@
     "milestone": null,
     "comments": 21,
     "created_at": "2014-01-02T20:14:17Z",
-    "updated_at": "2014-01-13T03:36:56Z",
+    "updated_at": "2014-01-13T14:30:21Z",
     "closed_at": null,
     "pull_request": {
       "html_url": null,
       "diff_url": null,
       "patch_url": null
     },
-    "body": "These are the features to be addressed in the first iteration,\r\nas well as the prototype of the iteration tracker.\r\n\r\nhere are links to the tasks this iteration seeks to implement:\r\n\r\n* get status of a task (open or closed)    \r\n   https://github.com/dominictarr/feedopensource/issues/1\r\n* generate a iteration status badge:    \r\n   https://github.com/dominictarr/feedopensource/issues/2\r\n* handle basic payments:\r\n   https://github.com/dominictarr/feedopensource/issues/3\r\n* use https\r\n   https://github.com/dominictarr/feedopensource/issues/10\r\n\r\nI'm gonna be conservative and give this two weeks.\r\nThis is new stuff, so problems are likely to crop up,\r\n\r\nI am only gonna ask for 1.2 btc, which very much for hiring a developer for that length of time, but the most important thing here is to validate the idea by testing whether people are actually prepared to pay, and 1.2 btc is enough to be a real test, but not too much either.\r\n\r\nOf course, you'd probably never see a kickstarter for this little, but the whole point is that this is iterative, and so there is a real way to monitor the progress and provide meaningful feedback."
+    "body": "These are the features to be addressed in the first iteration,\r\nas well as the prototype of the iteration tracker.\r\n\r\nhere are links to the tasks this iteration seeks to implement:\r\n\r\n* get status of a task (open or closed)    \r\n   https://github.com/dominictarr/feedopensource/issues/1\r\n* generate a iteration status badge:    \r\n   https://github.com/dominictarr/feedopensource/issues/2\r\n* handle basic payments:\r\n   https://github.com/dominictarr/feedopensource/issues/3\r\n* use https\r\n   https://github.com/dominictarr/feedopensource/issues/10\r\n\r\n[![progress bar](http://feedopensource.com/badge/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2)](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)\r\n\r\n(edit: added progress bar - note, this is being cached by github, because it's yet not served over https)\r\n\r\nI'm gonna be conservative and give this two weeks.\r\nThis is new stuff, so problems are likely to crop up,\r\n\r\nI am only gonna ask for 1.2 btc, which very much for hiring a developer for that length of time, but the most important thing here is to validate the idea by testing whether people are actually prepared to pay, and 1.2 btc is enough to be a real test, but not too much either.\r\n\r\nOf course, you'd probably never see a kickstarter for this little, but the whole point is that this is iterative, and so there is a real way to monitor the progress and provide meaningful feedback."
   },
   {
     "url": "https://api.github.com/repos/dominictarr/feedopensource/issues/3",
