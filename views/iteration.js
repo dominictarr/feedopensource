@@ -17,14 +17,13 @@ function img (src) {
 //which can also be represented within the progress bar.
 //given that, it will be easy to generate the detailed progress bar.
 
-module.exports = function (funders) {
+module.exports = function (iteration) {
   var total = 0
+  var funders = iteration.funders
   return h('div',
     h('h1', 'iteration N'),
     funders.map(function (funder) {
       total += funder.sum
-      if(!funder.login) return
-  //      return h('h3', 'Unclaimed', funder.sum/1e8)
 
       /*
       +----+
