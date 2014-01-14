@@ -14,7 +14,7 @@
     "stack": "~0.1.0",
     "ecstatic": "~0.4.13",
     "btcprogress": "*",
-    "request": "~2.31.0",
+    "request": "~2.30.0",
     "tape": "~2.3.2"
   },
   "devDependencies": {
