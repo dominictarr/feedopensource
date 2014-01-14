@@ -1,0 +1,14 @@
+carpenter sourceFile destFile {opts}
+
+stdout | carpenter destFile {opts}
+
+stdout | carpenter {opts} | stdin
+
+# template syntax:
+
+{{{!date}}}          # insert output of a shell command
+
+{{{-name}}}          # insert a commandline options `--name foo`
+
+{{{=Math.random()}}} # insert output of a javascript expression
+
