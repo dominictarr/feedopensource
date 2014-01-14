@@ -10,6 +10,9 @@ function cb(err, data) {
 //  , args = { user:'dominictarr', repo:'feedopensource', options: opts }
 //, list = issues.all(args, cb)
 
-var opts = { fields: ['title', 'id', 'user', 'body', 'comments'], percentTasksCompleted: true }  // for example.
+var opts = {
+      fields: ['title', 'user', 'comments'],
+      percentTasksCompleted: true  // for example.
+    }
   , args = { user:'dominictarr', repo:'feedopensource', options: opts }
   , work = issues.iterations(args, cb)

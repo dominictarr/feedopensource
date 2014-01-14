@@ -4,7 +4,7 @@ var get = require('../lib/get')
 
 function _getOpenIssues(_args, cb) {
   // fetches open github issues.
-  var keepFields = _args.options.fields || ['id', 'user', 'comments']
+  var keepFields = _args.options.fields || ['title', 'number', 'user', 'body', 'comments']
     , issues = {}
     , req = resolve('https://api.github.com', join.apply(null, ['repos', _args.user, _args.repo, 'issues']))
 
@@ -27,7 +27,7 @@ function _getOpenIssues(_args, cb) {
 
             if (field == 'user')
               // store the unique identifier of issue 'owner'.
-              issues[issue.number].user = issue.user.id
+              issues[issue.number].user = issue.user.login
             else
               // store any other useful properties (aka fields).
               issues[issue.number][field] = issue[field]
@@ -47,27 +47,40 @@ function _getActiveIterations(_args, issues, cb) {
   var regex = /^iteration/i  // starts with 'Iteration'
   //, regex = /^#/  // only issues that start with '#'
     , regex_tasks = /\*.*\r\n\s{3}.*\/\d+$|^\*.*\r\n\s{3}.*#\d+/mg
+    , keepFields = _args.options.fields || ['number', 'title', 'user', 'comments']
     , res = {}
 
   for (var i in issues) {
 
     if (issues[i].title.match(regex)) {
-      res.id = issues[i].id
       var tasks = issues[i].body.match(regex_tasks)
 
       if (tasks != undefined) {
-        var taskSum = 0
-        // count related 'task' issue id(s).
-        tasks.forEach(function(task) {
-          var n = task.match(/[\/|#](\d+)$/)
-          //console.log(n[1])
-          if (n[1] != undefined) {
-            taskSum++
-          }
-        })
 
-        res.tasks = tasks.length
-        res.percent_completed = 100 - Math.round(100 / tasks.length * taskSum)
+        for (var k in issues[i]) {
+          keepFields.forEach(function(field) {
+            if (issues[i].hasOwnProperty(field))
+              res[field] = issues[i][field]
+            else
+              delete res[field]
+          })
+        }
+
+        if (_args.options.percentTasksCompleted === true) {  // for example.
+          var taskSum = 0
+          // count related 'task' issue id(s).
+          tasks.forEach(function(task) {
+            var n = task.match(/[\/|#](\d+)$/)
+            //console.log(n[1])
+            if (n[1] != undefined) {
+              taskSum++
+            }
+          })
+
+          res.tasks = tasks.length
+          res.percent_completed = 100 - Math.round(100 / tasks.length * taskSum)
+        }
+
       }
     }
   }
@@ -82,7 +95,8 @@ issueParser = {
   },
 
   iterations: function(options, cb) {
-    _getOpenIssues(options, function(err, data) {
+    var opts = { user: options.user, repo: options.repo, options: {} }
+    _getOpenIssues(opts, function(err, data) {
       if (err) cb(err)
       _getActiveIterations(options, data, cb)
     })
