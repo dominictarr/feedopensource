@@ -19,8 +19,6 @@ var app = stack(
   ecstatic(path.join(__dirname, 'static'))
 )
 
-console.log(config)
-
 var secure = process.getuid() === 0
 
 if(secure) {
