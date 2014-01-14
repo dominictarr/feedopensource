@@ -4,7 +4,7 @@ var get = require('../lib/get')
 
 function _getOpenIssues(_args, cb) {
   // fetches open github issues.
-  var keepFields = _args.fields || ['id', 'user', 'comments']
+  var keepFields = _args.options.fields || ['id', 'user', 'comments']
     , issues = {}
     , req = resolve('https://api.github.com', join.apply(null, ['repos', _args.user, _args.repo, 'issues']))
 
@@ -12,55 +12,81 @@ function _getOpenIssues(_args, cb) {
     if (err) return cb(err)
 
     data.forEach(function(issue) {
-      keepFields.forEach(function(field) {
-        if (issue.hasOwnProperty(field)) {
 
-          if (issues[issue.number] === undefined)
-            issues[issue.number] = {}
+      if (keepFields.length === 1 && keepFields[0].toLowerCase() === 'all') {
 
-          if (field == 'user')
-            // store the unique identifier of issue 'owner'.
-            issues[issue.number].user = issue.user.id
-          else
-            // store any other useful properties (aka fields).
-            issues[issue.number][field] = issue[field]
+        issues[issue.number] = issue
 
-        }
-      })
+      } else {
+
+        keepFields.forEach(function(field) {
+          if (issue.hasOwnProperty(field)) {
+
+            if (issues[issue.number] === undefined)
+              issues[issue.number] = {}
+
+            if (field == 'user')
+              // store the unique identifier of issue 'owner'.
+              issues[issue.number].user = issue.user.id
+            else
+              // store any other useful properties (aka fields).
+              issues[issue.number][field] = issue[field]
+
+          }
+        })
+
+      }
     })
 
     cb(null, issues)
   })
 }
 
-function _getActiveIterations() {
-  /**
+function _getActiveIterations(_args, issues, cb) {
+  // parses open github issues, extracts statistics for 'iterations'.
   var regex = /^iteration/i  // starts with 'Iteration'
   //, regex = /^#/  // only issues that start with '#'
-    , tasks = /^\*.*\r\n\s{3}.*\/\d+$|^\*.*\r\n\s{3}.*#\d+$/mg
+    , regex_tasks = /\*.*\r\n\s{3}.*\/\d+$|^\*.*\r\n\s{3}.*#\d+/mg
+    , res = {}
 
-  if (issues[i].title.match(regex)) {
-    retObj.id = issues[i].id
-    retObj.tasks = issues[i].body.match(tasks)
+  for (var i in issues) {
 
-    if (retObj.tasks != undefined) {
-      // parse related issue id(s).
-      for (var j=0, k=retObj.tasks.length; j<k; j++) {
-        var n = retObj.tasks[j].match(/[\/|#](\d+)$/)
-        //console.log(n[1])
-        if (n[1] != undefined) {
-        }
+    if (issues[i].title.match(regex)) {
+      res.id = issues[i].id
+      var tasks = issues[i].body.match(regex_tasks)
+
+      if (tasks != undefined) {
+        var taskSum = 0
+        // count related 'task' issue id(s).
+        tasks.forEach(function(task) {
+          var n = task.match(/[\/|#](\d+)$/)
+          //console.log(n[1])
+          if (n[1] != undefined) {
+            taskSum++
+          }
+        })
+
+        res.tasks = tasks.length
+        res.percent_completed = 100 - Math.round(100 / tasks.length * taskSum)
       }
     }
   }
-  */
+
+  cb(null, res)
 }
 
 issueParser = {
 
-  all: function(options, cb) { _getOpenIssues(options, cb) },
+  all: function(options, cb) {
+    _getOpenIssues(options, cb)
+  },
 
-  iterations: function() { _getActiveIterations() }
+  iterations: function(options, cb) {
+    _getOpenIssues(options, function(err, data) {
+      if (err) cb(err)
+      _getActiveIterations(options, data, cb)
+    })
+  }
 
 }
 

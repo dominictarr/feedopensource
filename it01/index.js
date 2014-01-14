@@ -6,7 +6,10 @@ function cb(err, data) {
   process.exit()
 }
 
-var opts = { user:'dominictarr', repo:'feedopensource', fields: null }
-  , list = issues.all(opts, cb)
+//var opts = { fields: ['all'] }  // default: fields: null (compact version)
+//  , args = { user:'dominictarr', repo:'feedopensource', options: opts }
+//, list = issues.all(args, cb)
 
-
+var opts = { fields: ['title', 'id', 'user', 'body', 'comments'], percentTasksCompleted: true }  // for example.
+  , args = { user:'dominictarr', repo:'feedopensource', options: opts }
+  , work = issues.iterations(args, cb)
