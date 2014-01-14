@@ -5,7 +5,7 @@ module.exports = function (data, view) {
 
   return h('html',
     h('head', 
-      h('link', {rel: 'stylesheet', href: 'style.css'}),
+      h('link', {rel: 'stylesheet', href: '/style.css'}),
       h('title', 'feedopensource')
     ),
     h('div#content', view(data))

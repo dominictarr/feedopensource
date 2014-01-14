@@ -35,7 +35,7 @@ module.exports = function (funders) {
 
       return h('div.row',
         h('div.span1',
-          a(funder.html_url, img(funder.avatar_url || 'grumpy.jpg'))
+          a(funder.html_url, img(funder.avatar_url || '/grumpy.jpg'))
         ),
         h('div.span4',
           h('div.uline.i4',
