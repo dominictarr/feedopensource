@@ -2,7 +2,7 @@ var join = require('path').join
 
 var home = process.env.SUDO_USER
            ? join('/home', process.env.SUDO_USER)
-           : process.env.HOME
+           : process.env.HOME || '/root'
 
 module.exports = require('rc')('feedopensource', {
   cert: join(home, '.feedopensource', 'server-cert.pem'),
