@@ -26,6 +26,10 @@ h1, h2, h3 {
   border-bottom: 1px dotted hsla(0, 100%, 50%, 0.5);
 }
 
+.uline {
+  border-bottom: 1px dotted hsla(0, 100%, 50%, 0.5);
+}
+
 h1 { font-size: 3em; }
 h2 { font-size: 2em; }
 h3 { font-size: 1.5em; }
@@ -41,9 +45,24 @@ h3 { font-size: 1.5em; }
 .span2 { width: 160px; }
 .span1 { width: 80px;  }
 
+.i6 { width: 4800px; }
+.i4 { width: 320px; }
+.i3 { width: 240px; }
+.i2 { width: 160px; }
+
+.v1 { margin-top: 10px; }
+
+.sm { font-size: 0.8em; font-family: monospace }
+.dk { background-color: #eeeeee; }
+
+
 [class*="span"] {
   float      : left;
   margin-left: 20px
+}
+
+[class*="i"] {
+  display: inline-block;
 }
 
 .row:after, .row:before {
@@ -59,5 +78,6 @@ h3 { font-size: 1.5em; }
 .row {
   display: block;
   margin-left: -20px;
+  margin-top: 20px
 }
 
