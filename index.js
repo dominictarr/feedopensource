@@ -11,11 +11,25 @@ var ecstatic    = require('ecstatic')
 var stack       = require('stack')
 var redirect    = require('./lib/https-redirect')
 var config      = require('./config')
+var fos         = require('./lib')
 
 var bar         = btcprogress()
 
+var layout      = require('./views/layout')
+
 var app = stack(
   route('/badge/', bar),
+  route(/\/iteration\/(1[0-z]{33})/, function (req, res, next) {
+    var user = 'dominictarr'
+    var repo = 'feedopensource'
+    fos.iteration(user, repo, req.params[0], function (err, data) {
+      if(err) return next(err)
+      fos.funders(user, repo, ''+data.number, req.params[0], function (err, funders) {
+        if(err) return next(err)
+        res.end(layout(funders, require('./views/funders')))
+      })
+    })
+  }),
   ecstatic(path.join(__dirname, 'static'))
 )
 
