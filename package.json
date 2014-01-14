@@ -16,7 +16,9 @@
     "btcprogress": "*",
     "request": "~2.31.0",
     "tape": "~2.3.2",
-    "rc": "~0.3.2"
+    "rc": "~0.3.2",
+    "html-element": "https://github.com/dominictarr/html-element.git",
+    "hyperscript": "~1.4.0"
   },
   "devDependencies": {
     "carpenter": "0.1",
