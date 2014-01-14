@@ -29,3 +29,35 @@ h1, h2, h3 {
 h1 { font-size: 3em; }
 h2 { font-size: 2em; }
 h3 { font-size: 1.5em; }
+
+//.inline { display: inline-block; }
+
+//use fixed layout like twitter bootstrap / flatUI
+
+.span6 { width: 480px; }
+.span5 { width: 400px; }
+.span4 { width: 320px; }
+.span3 { width: 240px; }
+.span2 { width: 160px; }
+.span1 { width: 80px;  }
+
+[class*="span"] {
+  float      : left;
+  margin-left: 20px
+}
+
+.row:after, .row:before {
+  display: table;
+  line-height: 0px;
+  content: "";
+}
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  display: block;
+  margin-left: -20px;
+}
+
