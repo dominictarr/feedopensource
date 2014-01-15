@@ -1,9 +1,9 @@
-
-var get     = require('../lib/get')
-var resolve = require('url').resolve
-var join    = require('path').join
-var funders = require('./funders')
+var get        = require('../lib/get')
+var resolve    = require('url').resolve
+var join       = require('path').join
+var funders    = require('./funders')
 var iterations = require('./iterations')
+var iteration  = require('./iteration')
 
 function ghApi() {
   return resolve('https://api.github.com', join.apply(null, arguments))
@@ -40,10 +40,9 @@ api.iteration = function (user, repo, wallet, cb) {
     if(err) return cb(err)
     for(var i in data) {
       if(data[i].wallet === wallet) {
-        var iteration = data[i]
+        var iter = data[i]
         return fos.funders(user, repo, ''+iteration.number, wallet, function (err, funders) {
-          iteration.funders = funders
-          return cb(null, iteration)
+          return cb(null, iteration(iter, funders)
         })
       }
     }
@@ -68,35 +67,10 @@ if(!module.parent) {
     return
   }
 
-
-
   api[method].apply(null, args.concat(function (err, data) {
     if(err) throw err
     console.log(JSON.stringify(data, null, 2))
     process.exit()
   }))
 
-//  if(type === 'funders')
-//    fos.funders('dominictarr', 'feedopensource', '4', '1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu',
-//      function (err, data) {
-//        if(err) throw err
-//        console.log(JSON.stringify(data, null, 2))
-//        process.exit()
-//      })
-//  else if(type === 'iterations')
-//    fos.iterations('dominictarr', 'feedopensource', function (err, data) {
-//      if(err) throw err
-//      console.log(JSON.stringify(data, null, 2))
-//      process.exit()
-//    })
-//  else
-//    fos.iteration(
-//      'dominictarr',
-//      'feedopensource',
-//      '1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu',
-//        function (err, data) {
-//          if(err) throw err
-//          console.log(JSON.stringify(data, null, 2))
-//          process.exit()
-//        })
 }
