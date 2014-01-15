@@ -70,38 +70,169 @@
     "sum": 50000000
   },
   {
-    "type": "unclaimed",
-    "from_transactions": {
-      "612d6490306bcdac471839e2817e34a5d24522a7fd3ebae6db39898f0ee0ba62": {
-        "n": 0,
-        "value": 990000,
-        "addr": "1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu",
+    "unclaimed": true,
+    "txs": [
+      {
+        "result": 2055446,
+        "block_height": 280062,
+        "time": 1389515352,
+        "inputs": [
+          {
+            "prev_out": {
+              "n": 0,
+              "value": 1000000,
+              "addr": "1F6Puy4AgQJBm4nbvMRsQz12jEvugjRsG3",
+              "tx_index": 99839859,
+              "type": 0
+            }
+          }
+        ],
+        "vout_sz": 1,
+        "relayed_by": "82.90.118.127",
+        "hash": "612d6490306bcdac471839e2817e34a5d24522a7fd3ebae6db39898f0ee0ba62",
+        "vin_sz": 1,
         "tx_index": 107275892,
-        "type": 0
+        "ver": 1,
+        "out": [
+          {
+            "n": 0,
+            "value": 990000,
+            "addr": "1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu",
+            "tx_index": 107275892,
+            "type": 0
+          }
+        ],
+        "size": 191
       },
-      "9b4a49a76336a8737bcc81085e9629a91d4d469eb05420e96a02ac37f6e29e3e": {
-        "n": 0,
-        "value": 1000000,
-        "addr": "1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu",
+      {
+        "result": 50000000,
+        "block_height": 280037,
+        "time": 1389502493,
+        "inputs": [
+          {
+            "prev_out": {
+              "n": 1,
+              "value": 844270,
+              "addr": "14wWWNFU9aZaBLjbcVQnQrUMqHzkDQygHT",
+              "tx_index": 107248779,
+              "type": 0
+            }
+          },
+          {
+            "prev_out": {
+              "n": 0,
+              "value": 1000000,
+              "addr": "14xqv7Z7tWYwQYgYi3RhAn5QZMAKAYHaoC",
+              "tx_index": 107257973,
+              "type": 0
+            }
+          }
+        ],
+        "vout_sz": 2,
+        "relayed_by": "91.230.204.45",
+        "hash": "9b4a49a76336a8737bcc81085e9629a91d4d469eb05420e96a02ac37f6e29e3e",
+        "vin_sz": 2,
         "tx_index": 107258336,
-        "type": 0
+        "ver": 1,
+        "out": [
+          {
+            "n": 0,
+            "value": 1000000,
+            "addr": "1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu",
+            "tx_index": 107258336,
+            "type": 0
+          },
+          {
+            "n": 1,
+            "value": 824270,
+            "addr": "1NR2GZAq2XLuxfTixqW14RNCnvGzjEBcA5",
+            "tx_index": 107258336,
+            "type": 0
+          }
+        ],
+        "size": 437
       },
-      "b3df16687b4414f43926e2546de3edd90a4e6812f7110c8350da8941b91ec89b": {
-        "n": 0,
-        "value": 20000000,
-        "addr": "1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu",
+      {
+        "result": 2500000,
+        "block_height": 279640,
+        "time": 1389333274,
+        "inputs": [
+          {
+            "prev_out": {
+              "n": 0,
+              "value": 100000000,
+              "addr": "18QaFQTYePmxBJxvwCU1Dqp62suf1jozNW",
+              "tx_index": 97749433,
+              "type": 0
+            }
+          }
+        ],
+        "vout_sz": 2,
+        "relayed_by": "184.56.88.71",
+        "hash": "b3df16687b4414f43926e2546de3edd90a4e6812f7110c8350da8941b91ec89b",
+        "vin_sz": 1,
         "tx_index": 106952853,
-        "type": 0
+        "ver": 1,
+        "out": [
+          {
+            "n": 0,
+            "value": 20000000,
+            "addr": "1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu",
+            "tx_index": 106952853,
+            "type": 0
+          },
+          {
+            "n": 1,
+            "value": 79990000,
+            "addr": "1KEpBnziPgEiHryq8hyTyS8yEHLaS3Knru",
+            "tx_index": 106952853,
+            "type": 0
+          }
+        ],
+        "size": 225
       },
-      "a70271dc6984b50aec36040a8745e3eaf59a7ca2533a54b94f158fbac5dcc75e": {
-        "n": 0,
-        "value": 1500000,
-        "addr": "1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu",
+      {
+        "result": 20000000,
+        "block_height": 279604,
+        "time": 1389316807,
+        "inputs": [
+          {
+            "prev_out": {
+              "n": 0,
+              "value": 66379776,
+              "addr": "1jb55g498MEa274Z1YWUXQFxZE5NzvhV7",
+              "tx_index": 106910379,
+              "type": 0
+            }
+          }
+        ],
+        "vout_sz": 2,
+        "relayed_by": "127.0.0.1",
+        "hash": "a70271dc6984b50aec36040a8745e3eaf59a7ca2533a54b94f158fbac5dcc75e",
+        "vin_sz": 1,
         "tx_index": 106925020,
-        "type": 0
+        "ver": 1,
+        "out": [
+          {
+            "n": 0,
+            "value": 1500000,
+            "addr": "1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu",
+            "tx_index": 106925020,
+            "type": 0
+          },
+          {
+            "n": 1,
+            "value": 64869776,
+            "addr": "1jb55g498MEa274Z1YWUXQFxZE5NzvhV7",
+            "tx_index": 106925020,
+            "type": 0
+          }
+        ],
+        "size": 259
       }
-    },
-    "sum": 23490000
+    ],
+    "sum": 23490000,
+    "login": "**unclaimed**"
   },
   {
     "login": "ralphtheninja",
