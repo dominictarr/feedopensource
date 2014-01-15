@@ -18,7 +18,7 @@ var views       = require('./views')
 var autoApi     = require('./lib/auto-api')
 
 var app = stack(
-  route('/badge', btcprogress())
+  route('/badge', btcprogress()),
   autoApi(api, views),
   ecstatic(join(__dirname, 'static'))
 )
