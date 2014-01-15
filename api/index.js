@@ -36,13 +36,13 @@ api.iterations = function (user, repo, cb) {
 }
 
 api.iteration = function (user, repo, wallet, cb) {
-  fos.iterations(user, repo, function (err, data) {
+  api.iterations(user, repo, function (err, data) {
     if(err) return cb(err)
     for(var i in data) {
       if(data[i].wallet === wallet) {
         var iter = data[i]
-        return fos.funders(user, repo, ''+iteration.number, wallet, function (err, funders) {
-          return cb(null, iteration(iter, funders)
+        return api.funders(user, repo, ''+iteration.number, wallet, function (err, funders) {
+          return cb(null, iteration(iter, funders))
         })
       }
     }
@@ -55,7 +55,7 @@ if(!module.parent) {
   var method = args.shift()
   var p = console.error
   if(!api[method]) {
-    p('expected one of:', Object.keys(fos).join(', '))
+    p('expected one of:', Object.keys(api).join(', '))
     p()
     p('try:')
     p('node ./api/index.js funders dominictarr feedopensource 4 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu')
