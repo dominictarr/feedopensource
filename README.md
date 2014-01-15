@@ -57,7 +57,7 @@ as *feedopensource* feeds itself with *feedopensource*
 
 You are looking at a _very simple_ prototype.
 
-[![progress bar](http://feedopensource.com/badge/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2)](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)
+[![progress bar](https://feedopensource.com/badge/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2)](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)
 
 As deposited fund reach the target $1000 USD, this progress bar fills.
 then I will begin the [next iteration](https://github.com/dominictarr/feedopensource/issues/4).

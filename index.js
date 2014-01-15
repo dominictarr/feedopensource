@@ -1,19 +1,40 @@
 #! /usr/bin/env node
 
+var https       = require('https')
 var http        = require('http')
+var fs          = require('fs')
+var join        = require('path').join
+
 var btcprogress = require('btcprogress')
 var route       = require('tiny-route')
-var path        = require('path')
 var ecstatic    = require('ecstatic')
 var stack       = require('stack')
-var bar         = btcprogress()
+
+var redirect    = require('./lib/https-redirect')
+var config      = require('./config')
+var api         = require('./api')
+var views       = require('./views')
+
+var bar  = btcprogress()
+var autoApi = require('./lib/auto-api')
 
 var app = stack(
   route('/badge/', bar),
-  ecstatic(path.join(__dirname, 'static'))
+  autoApi(api, views),
+  ecstatic(join(__dirname, 'static'))
 )
 
-var port = process.getuid() === 0 ? 80 : 8000
+var secure = process.getuid() === 0
 
-http.createServer(app).listen(port)
+if(secure) {
 
+  https.createServer({
+   cert: fs.readFileSync(config.cert),
+   key : fs.readFileSync(config.key)
+  }, app).listen(443)
+
+  http.createServer(redirect()).listen(80)
+
+} else {
+  http.createServer(app).listen(config.port)
+}

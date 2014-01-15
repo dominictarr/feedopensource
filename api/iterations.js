@@ -1,4 +1,3 @@
-var get     = require('./get')
 var resolve = require('url').resolve
 var join    = require('path').join
 
@@ -18,12 +17,6 @@ function matchAll(r, s) {
     s = s.substring(m.index + 1)
   }
   return matches
-}
-
-if(!module.parent) {
-  console.error(
-    matchAll(/(\w)(\d+)/, 'aoe32paorchoeau8,4rouo44ouuaou44342u24')
-  )
 }
 
 
@@ -69,9 +62,15 @@ module.exports = function (issues, collaborators, user, repo) {
           join('repos', _username, _repo, 'issues', issue))
       })
 
+      var total = 0, complete = 0
       issue.links = links.map(function (e) {
-        return {url: e, closed_at: all[e].closed_at}
+        total ++
+        if(!all[e])
+          complete ++
+        return {url: e, closed: !all[e]}
       })
+      issue.total = total
+      issue.complete = complete
       iterations.push(issue)
     }
     wallets[issue.wallet] = true

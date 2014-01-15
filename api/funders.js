@@ -34,7 +34,6 @@ module.exports = function (comments, wallet) {
     var hash = m && m[1]
 
     if(hash) {
-      console.error(hash)
       var tx = find(wallet.txs, function (tx) { return tx.hash === hash })
       tx.out.forEach(function (e) {
         if(e.addr === address) { //this transaction is into the iteration wallet.
@@ -53,14 +52,13 @@ module.exports = function (comments, wallet) {
   }
 
   //mark any remaining transactions as unclaimed
-  var unclaimed = {}
-  var sum = 0
+  var unclaimed = {unclaimed: true, txs: [], sum: 0, login: '**unclaimed**'}
   wallet.txs.forEach(function (tx) {
     if(!paid[tx.hash]) {
       tx.out.forEach(function (e) {
         if(e.addr === address) { //this transaction is into the iteration wallet.
-          unclaimed[tx.hash] = e
-          sum += e.value
+          unclaimed.txs.push(tx)
+          unclaimed.sum += e.value
         }
       })
       
@@ -71,7 +69,7 @@ module.exports = function (comments, wallet) {
 
   for(var user in users)
     ordered.push(users[user])
-  ordered.push({type: 'unclaimed', from_transactions: unclaimed, sum: sum})
+  ordered.push(unclaimed)
 
   ordered.sort(function (a, b) {
     return b.sum - a.sum
