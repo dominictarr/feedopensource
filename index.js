@@ -34,6 +34,13 @@ if(secure) {
 
   http.createServer(redirect()).listen(80)
 
+  process.on('uncaughtException', function (err) {
+    console.log('*****************************')
+    console.error('Error at:', new Date)
+    console.error(err.stack)
+    console.log('*****************************')
+  })
+
 } else {
   http.createServer(app).listen(config.port)
 }
