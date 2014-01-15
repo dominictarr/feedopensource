@@ -60,9 +60,9 @@ if(!module.parent) {
     p('expected one of:', Object.keys(fos).join(', '))
     p()
     p('try:')
-    p('node ./lib/index.js funders dominictarr feedopensource 4 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu')
-    p('node ./lib/index.js iterations dominictarr feedopensource')
-    p('node ./lib/index.js iteration dominictarr feedopensource 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu')
+    p('node ./api/index.js funders dominictarr feedopensource 4 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu')
+    p('node ./api/index.js iterations dominictarr feedopensource')
+    p('node ./api/index.js iteration dominictarr feedopensource 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu')
     return
   }
 
