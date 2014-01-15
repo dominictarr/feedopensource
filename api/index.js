@@ -13,9 +13,9 @@ function bcApi() {
   return resolve('https://blockchain.info', join.apply(null, arguments) + '?format=json')
 }
 
-var fos = exports
+var api = exports
 
-fos.funders = function (user, repo, issue, wallet, cb) {
+api.funders = function (user, repo, issue, wallet, cb) {
   var project, wallet
   get.all([
     ghApi('repos', user, repo, 'issues', issue, 'comments'),
@@ -26,7 +26,7 @@ fos.funders = function (user, repo, issue, wallet, cb) {
   })
 }
 
-fos.iterations = function (user, repo, cb) {
+api.iterations = function (user, repo, cb) {
   get.all([
     ghApi('repos', user, repo, 'issues'),
     ghApi('repos', user, repo, 'collaborators'),
@@ -36,7 +36,7 @@ fos.iterations = function (user, repo, cb) {
   })
 }
 
-fos.iteration = function (user, repo, wallet, cb) {
+api.iteration = function (user, repo, wallet, cb) {
   fos.iterations(user, repo, function (err, data) {
     if(err) return cb(err)
     for(var i in data) {
@@ -55,18 +55,23 @@ fos.iteration = function (user, repo, wallet, cb) {
 if(!module.parent) {
   var args = process.argv.slice(2)
   var method = args.shift()
-  if(!fos[method]) {
-    var p = console.error
+  var p = console.error
+  if(!api[method]) {
     p('expected one of:', Object.keys(fos).join(', '))
     p()
     p('try:')
-    p('node ./lib/index.js funders dominictarr feedopensource 4 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu')
-    p('node ./lib/index.js iterations dominictarr feedopensource')
-    p('node ./lib/index.js iteration dominictarr feedopensource 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu')
+    p('node ./api/index.js funders dominictarr feedopensource 4 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu')
+    p('node ./api/index.js iterations dominictarr feedopensource')
+    p('node ./api/index.js iteration dominictarr feedopensource 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu')
+    return
+  } else if(api[method].length - 1 !== args.length) {
+    p(JSON.stringify(method) +' command takes ' + (api[method].length - 1) + ' arguments')
     return
   }
 
-  fos[method].apply(null, args.concat(function (err, data) {
+
+
+  api[method].apply(null, args.concat(function (err, data) {
     if(err) throw err
     console.log(JSON.stringify(data, null, 2))
     process.exit()
