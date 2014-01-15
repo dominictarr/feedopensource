@@ -15,11 +15,10 @@ var config      = require('./config')
 var api         = require('./api')
 var views       = require('./views')
 
-var bar  = btcprogress()
-var autoApi = require('./lib/auto-api')
+var autoApi     = require('./lib/auto-api')
 
 var app = stack(
-  route('/badge/', bar),
+  route('/badge', btcprogress())
   autoApi(api, views),
   ecstatic(join(__dirname, 'static'))
 )
