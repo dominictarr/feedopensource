@@ -73,7 +73,8 @@ function _getActiveIterations(_args, issues, cb) {
             var n = task.match(/[\/|#](\d+)$/)
             //console.log(n[1])
             if (n[1] != undefined) {
-              taskSum++
+              if (issues.hasOwnProperty(n[1]))
+                taskSum++
             }
           })
 
