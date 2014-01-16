@@ -21,7 +21,7 @@ module.exports = function (comments, wallet) {
   var users = {}
   var txs = {}
   var paid = {}
-  
+  wallet.txs = wallet.txs || []
   comments.forEach(function (comment) {
     var name = comment.user.login
     var user = users[name] = users[name] || comment.user
@@ -55,6 +55,7 @@ module.exports = function (comments, wallet) {
 
   //mark any remaining transactions as unclaimed
   var unclaimed = {unclaimed: true, txs: [], sum: 0, login: '**unclaimed**'}
+  
   wallet.txs.forEach(function (tx) {
     if(!paid[tx.hash]) {
       tx.out.forEach(function (e) {
