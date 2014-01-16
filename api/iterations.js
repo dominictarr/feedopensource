@@ -44,6 +44,9 @@ module.exports = function (issues, collaborators, user, repo) {
     if(!names[issue.user.login]) return
     var m = progressbar.exec(issue.body)
 
+    issue.repo_owner = user
+    issue.repo = repo
+
     //console.log(issue.body)
     if(!m) return
     issue.wallet = m[1]
