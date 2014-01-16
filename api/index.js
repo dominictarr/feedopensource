@@ -1,9 +1,9 @@
-
-var get     = require('../lib/get')
-var resolve = require('url').resolve
-var join    = require('path').join
-var funders = require('./funders')
+var get        = require('../lib/get')
+var resolve    = require('url').resolve
+var join       = require('path').join
+var funders    = require('./funders')
 var iterations = require('./iterations')
+var iteration  = require('./iteration')
 
 function ghApi() {
   return resolve('https://api.github.com', join.apply(null, arguments))
@@ -16,10 +16,9 @@ function bcApi() {
 var api = exports
 
 api.funders = function (user, repo, issue, wallet, cb) {
-  var project, wallet
   get.all([
     ghApi('repos', user, repo, 'issues', issue, 'comments'),
-    bcApi('address', wallet),
+    bcApi('address', wallet)
   ], function (err, args) {
     if(err) return cb(err)
     cb(null, funders.apply(null, args))
@@ -29,7 +28,7 @@ api.funders = function (user, repo, issue, wallet, cb) {
 api.iterations = function (user, repo, cb) {
   get.all([
     ghApi('repos', user, repo, 'issues'),
-    ghApi('repos', user, repo, 'collaborators'),
+    ghApi('repos', user, repo, 'collaborators')
   ], function (err, data) {
     if(err) return cb(err)
     cb(null, iterations(data[0], data[1], user, repo))
@@ -37,14 +36,13 @@ api.iterations = function (user, repo, cb) {
 }
 
 api.iteration = function (user, repo, wallet, cb) {
-  fos.iterations(user, repo, function (err, data) {
+  api.iterations(user, repo, function (err, data) {
     if(err) return cb(err)
     for(var i in data) {
       if(data[i].wallet === wallet) {
-        var iteration = data[i]
-        return fos.funders(user, repo, ''+iteration.number, wallet, function (err, funders) {
-          iteration.funders = funders
-          return cb(null, iteration)
+        var iter = data[i]
+        return api.funders(user, repo, ''+iteration.number, wallet, function (err, funders) {
+          return cb(null, iteration(iter, funders))
         })
       }
     }
@@ -57,7 +55,7 @@ if(!module.parent) {
   var method = args.shift()
   var p = console.error
   if(!api[method]) {
-    p('expected one of:', Object.keys(fos).join(', '))
+    p('expected one of:', Object.keys(api).join(', '))
     p()
     p('try:')
     p('node ./api/index.js funders dominictarr feedopensource 4 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu')
@@ -69,35 +67,10 @@ if(!module.parent) {
     return
   }
 
-
-
   api[method].apply(null, args.concat(function (err, data) {
     if(err) throw err
     console.log(JSON.stringify(data, null, 2))
     process.exit()
   }))
 
-//  if(type === 'funders')
-//    fos.funders('dominictarr', 'feedopensource', '4', '1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu',
-//      function (err, data) {
-//        if(err) throw err
-//        console.log(JSON.stringify(data, null, 2))
-//        process.exit()
-//      })
-//  else if(type === 'iterations')
-//    fos.iterations('dominictarr', 'feedopensource', function (err, data) {
-//      if(err) throw err
-//      console.log(JSON.stringify(data, null, 2))
-//      process.exit()
-//    })
-//  else
-//    fos.iteration(
-//      'dominictarr',
-//      'feedopensource',
-//      '1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu',
-//        function (err, data) {
-//          if(err) throw err
-//          console.log(JSON.stringify(data, null, 2))
-//          process.exit()
-//        })
 }
