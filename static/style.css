@@ -8,6 +8,7 @@
   border: 1px solid #bbbbbb;
   border-radius: 5px;
   box-shadow: 5px 3px 5px hsla(0,0%,50%,0.1);
+  padding-bottom: 20px;
 //;
 }
 
@@ -16,8 +17,11 @@ body {
 }
 
 li, p {
-  font-size: 1.5em;
   color: #3d3d3d;
+}
+
+front_page li, p {
+  font-size: 1.5em;
   line-height: 1.4em;
 }
 
@@ -78,6 +82,41 @@ h3 { font-size: 1.5em; }
 .row {
   display: block;
   margin-left: -20px;
+  margin-right: -20px;
   margin-top: 20px
+}
+
+.avatar {
+  margin-left: -80px;
+  position: absolute;
+}
+
+.funder {
+//  padding-left: 10px;
+//  padding-right: 10px;
+  margin-left: 120px;
+  margin-top: 10px;
+  height: 80px;
+//  border: 1px solid lightgray;
+//  border-left: none;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.nml {
+  margin-left: -20px
+}
+
+.fit {
+  width: 100%;
+//  display: block;
+}
+
+.ib {
+  display: inline-block
+}
+
+.pad10 {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 

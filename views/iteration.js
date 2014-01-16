@@ -3,12 +3,12 @@ require('html-element')
 var h = require('hyperscript')
 
 
-function a (href, linked) {
-  return h('a', {href: href}, linked)
+function a (href, linked, classes) {
+  return h('a'+(classes || ''), {href: href}, linked)
 }
 
-function img (src, width) {
-  return h('img', {src: src, width: width ? width+'px' : null})
+function img (src, width, classes) {
+  return h('img'+(classes || ''), {src: src, width: width ? width+'px' : null})
 }
 
 //okay, so funders object should also have data about the iteration.
@@ -28,8 +28,8 @@ module.exports = function (iteration) {
       )
     ),
 
-    h('h3', 'Funding', ' ('+iteration.sum.toPrecision(4) +'btc)', iteration.state.funded ? ' (Funded)' : ''),
-    h('div', img(iteration.badge_url)),
+    h('h3', 'Funding', iteration.state.funded ? ' (Funded)' : ''),
+    h('div', img(iteration.badge_url, null, '.badge')),
     a('bitcoin:' + iteration.wallet, 'bitcoin: '+ iteration.wallet),
 
     h('h3', 'Tasks', iteration.state.complete ? '(Complete)' : ''),
@@ -42,41 +42,39 @@ module.exports = function (iteration) {
       )
     ),
 
-    h('h3', 'Funders'),
-    funders.map(function (funder) {
-      total += funder.sum
+    h('h3', 'Funders',
+        ' ('+iteration.sum.toPrecision(4) +'btc, '
+        + (100 * ~~(iteration.sum/iteration.target))
+        + '% funded)'
+    ),
+    h('div.row',
+      funders.map(function (funder) {
+        total += funder.sum
 
-      /*
-      +----+
-      |THMB| USERNAME   0.123
-      |    |
-      +----+ trx,...
-      */
+        /*
+        +----+
+        |THMB| USERNAME   0.123
+        |    |
+        +----+ trx,...
+        */
 
-      return h('div.row',
-        h('div.span1',
-          a(funder.html_url, img(funder.avatar_url || '/grumpy.jpg', 80))
-        ),
-        h('div.span4',
-          h('div.uline.i4',
-            h('span.i2', a(funder.html_url, funder.login)),
-            h('span.i2', funder.sum/1e8)
-          ),
-          h('div.v1',
-            funder.txs.map(function (e) {
-              return h('div.sm', a('https://blockchain.info/tx/' + e.hash, e.hash.substring(0, 45)+'...'))
-            })
+        return h('div.ib',
+          h('div.funder',
+            a(funder.html_url, img(funder.avatar_url || '/grumpy.jpg', 80), '.avatar'),
+            h('div.uline.fit',
+              h('span.pad10',
+                h('span.i2', a(funder.html_url, funder.login)),
+                h('span', funder.sum/1e8)
+              )
+            ),
+            h('div.v1.pad10',
+              funder.txs.map(function (e) {
+                return h('div.sm', a('https://blockchain.info/tx/' + e.hash, e.hash.substring(0, 45)+'...'))
+              })
+            )
           )
         )
-      )
-    }),
-
-    h('div.row',
-      h('div.span1', 'total'),
-      h('div.span4.uline',
-        h('span.i2', ' '),
-        h('span.i2', total/1e8)
-      )
+      })
     )
   )
 }
