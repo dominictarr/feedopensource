@@ -4,9 +4,16 @@ var join       = require('path').join
 var funders    = require('./funders')
 var iterations = require('./iterations')
 var iteration  = require('./iteration')
+var config     = require('../config')
+
+var auth = (
+  config.id && config.secret ?
+  '?client_id='+config.id+'&client_secret='+config.secret
+  : ''
+)
 
 function ghApi() {
-  return resolve('https://api.github.com', join.apply(null, arguments))
+  return resolve('https://api.github.com', join.apply(null, arguments)) + auth
 }
 
 function bcApi() {
