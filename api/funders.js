@@ -34,8 +34,10 @@ module.exports = function (comments, wallet) {
     var hash = m && m[1]
 
     if(hash) {
-      var tx = find(wallet.txs, function (tx) { return tx.hash === hash })
-      tx.out.forEach(function (e) {
+      var tx = find(wallet.txs, function (tx) {
+        return tx.hash === hash
+      })
+      if(tx) tx.out.forEach(function (e) {
         if(e.addr === address) { //this transaction is into the iteration wallet.
           user.sum += e.value
           user.txs.push(tx)
