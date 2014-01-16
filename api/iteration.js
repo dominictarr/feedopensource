@@ -19,7 +19,7 @@ function setStatus (iteration) {
 }
 
 module.exports = function (iteration, funders) {
-  iteration.funders = funders
+  iteration.funders = funders || []
   iteration.sum = funders.reduce(function (a, b) {
     return a + b.sum
   }, 0) / 1e8
