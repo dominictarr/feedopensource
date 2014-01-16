@@ -5,7 +5,7 @@ var funders = require('../api/funders')
 var comments = require('./fixtures/comments.json')
 var wallet   = require('./fixtures/wallet.json')
 
-//return  console.log(JSON.stringify(funders(comments, wallet), null, 2))
+//return console.log(JSON.stringify(funders(comments, wallet), null, 2))
 
 var expected = require('./fixtures/funders.json')
 

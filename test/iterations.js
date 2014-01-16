@@ -1,10 +1,12 @@
 
 var issues        = require('./fixtures/issues.json')
 var collaborators = require('./fixtures/collaborators')
-var expected      = require('./fixtures/iterations.json')
 var iterations    = require('../api/iterations')
 
 var tape = require('tape')
+
+//return console.log(JSON.stringify(iterations(issues, collaborators, 'dominictarr', 'feedopensource'), null, 2))
+var expected      = require('./fixtures/iterations.json')
 
 tape('issues', function (t) {
 
