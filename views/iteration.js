@@ -7,8 +7,8 @@ function a (href, linked) {
   return h('a', {href: href}, linked)
 }
 
-function img (src) {
-  return h('img', {src: src, width: '80px'})
+function img (src, width) {
+  return h('img', {src: src, width: width ? width+'px' : null})
 }
 
 //okay, so funders object should also have data about the iteration.
@@ -21,7 +21,28 @@ module.exports = function (iteration) {
   var total = 0
   var funders = iteration.funders
   return h('div',
-    h('h1', 'iteration N'),
+    h('h1',
+      a(
+        iteration.html_url,
+        h('span', iteration.title)
+      )
+    ),
+
+    h('h3', 'Funding', ' ('+iteration.sum.toPrecision(4) +'btc)', iteration.state.funded ? ' (Funded)' : ''),
+    h('div', img(iteration.badge_url)),
+    a('bitcoin:' + iteration.wallet, 'bitcoin: '+ iteration.wallet),
+
+    h('h3', 'Tasks', iteration.state.complete ? '(Complete)' : ''),
+    h('div',
+      h('ul',
+        iteration.links.map(function (l) {
+          var url = l.url.replace('https://api.github.com', 'https://github.com')
+          return h('li', a(url, url), l.closed ? h('bold',' (DONE)') : null)
+        })
+      )
+    ),
+
+    h('h3', 'Funders'),
     funders.map(function (funder) {
       total += funder.sum
 
@@ -34,7 +55,7 @@ module.exports = function (iteration) {
 
       return h('div.row',
         h('div.span1',
-          a(funder.html_url, img(funder.avatar_url || '/grumpy.jpg'))
+          a(funder.html_url, img(funder.avatar_url || '/grumpy.jpg', 80))
         ),
         h('div.span4',
           h('div.uline.i4',
