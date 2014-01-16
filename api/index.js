@@ -13,7 +13,7 @@ var auth = (
 )
 
 function ghApi() {
-  return resolve('https://api.github.com', join.apply(null, arguments)) + auth + 'per_page=100'
+  return resolve('https://api.github.com', join.apply(null, arguments)) + auth + '&per_page=100'
 }
 
 function bcApi() {
