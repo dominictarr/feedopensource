@@ -27,12 +27,17 @@
     "site_admin": false
   },
   "labels": [],
-  "state": "open",
+  "state": {
+    "funded": true,
+    "draft": false,
+    "complete": false,
+    "progress": 0.25
+  },
   "assignee": null,
   "milestone": null,
   "comments": 24,
   "created_at": "2014-01-02T20:14:17Z",
-  "updated_at": "2014-01-14T16:21:10Z",
+  "updated_at": "2014-01-15T10:28:34Z",
   "closed_at": null,
   "pull_request": {
     "html_url": null,
@@ -262,11 +267,13 @@
           "inputs": [
             {
               "prev_out": {
+                "addr_tag": "William Casarin (jb55)",
                 "n": 0,
                 "value": 66379776,
                 "addr": "1jb55g498MEa274Z1YWUXQFxZE5NzvhV7",
                 "tx_index": 106910379,
-                "type": 0
+                "type": 0,
+                "addr_tag_link": "http://jb55.com"
               }
             }
           ],
@@ -285,11 +292,13 @@
               "type": 0
             },
             {
+              "addr_tag": "William Casarin (jb55)",
               "n": 1,
               "value": 64869776,
               "addr": "1jb55g498MEa274Z1YWUXQFxZE5NzvhV7",
               "tx_index": 106925020,
-              "type": 0
+              "type": 0,
+              "addr_tag_link": "http://jb55.com"
             }
           ],
           "size": 259
@@ -910,5 +919,8 @@
       ],
       "sum": 500000
     }
-  ]
+  ],
+  "sum": 1.26125445,
+  "progress": 0.25,
+  "status": "progress"
 }
