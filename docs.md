@@ -22,6 +22,9 @@ each iteration MUST use a new bitcoin wallet. the progress bar represents
 the total deposits into that wallet, not the current balance.
 feel free to transfer that money into another wallet.
 
+links to tasks MUST be in the post that creates the issue,
+not in a comment. You can always edit an issue to add or remove links.
+
 ## badge
 
 ``` js
