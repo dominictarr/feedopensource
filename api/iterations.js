@@ -48,9 +48,12 @@ module.exports = function (issues, collaborators, user, repo) {
     if(!m) return
     issue.wallet = m[1]
     issue.target = m[2]
+    issue.feedopensource_url = 'https://feedopensource.com/iteration/' + user + '/' + repo + '/' + m[1]
+    issue.badge_url = issue.feedopensource_url + '.png#' + issue.target
+
     if(!wallets[issue.wallet]) {
       
-      var links =
+      issue.links =
               matchAll(issueFull,        issue.body)
       .concat(matchAll(issueNum,         issue.body))
       .concat(matchAll(issueUserNum,     issue.body))
@@ -60,16 +63,24 @@ module.exports = function (issues, collaborators, user, repo) {
         var issue = matches.pop()
         var _username = matches.shift() || username
         var _repo = matches.shift() || repo
-        return resolve('https://api.github.com',
-          join('repos', _username, _repo, 'issues', issue))
+        return {
+          html_url: m,
+          url: resolve('https://api.github.com',
+            join('repos', _username, _repo, 'issues', issue)),
+          closed: false
+        }
       })
 
+      // check for closed issues.
+      // this doesn't work if the task is in another repo.
+      // (fix that later)
       var total = 0, complete = 0
-      issue.links = links.map(function (e) {
+      issue.links.forEach(function (e) {
         total ++
         if(!all[e])
           complete ++
-        return {url: e, closed: !all[e]}
+
+        e.closed = !all[e]
       })
       issue.total = total
       issue.complete = complete
