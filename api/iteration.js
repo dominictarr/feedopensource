@@ -18,11 +18,11 @@ function setStatus (iteration) {
   return iteration
 }
 
-module.exports = function (iterations, funders) {
+module.exports = function (iteration, funders) {
   iteration.funders = funders
   iteration.sum = funders.reduce(function (a, b) {
     return a + b.sum
-  }, 0)
+  }, 0) / 1e8
 
   setStatus(iteration)
 
@@ -30,7 +30,7 @@ module.exports = function (iterations, funders) {
 }
 
 module.exports.random = function () {
-  var target = 1 + Math.random()
+  var target = 1 + (1*Math.random())
   var sum = Math.min(target, target * Math.random()*1.3)
   var total = 2 + ~~(5*Math.random())
   var complete = ~~Math.min(total, total * Math.random() * (sum < target ? 1.1 : 1.5))
