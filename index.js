@@ -15,11 +15,14 @@ var config      = require('./config')
 var api         = require('./api')
 var views       = require('./views')
 
+var badge       = require('./lib/badge').getBadge
 var autoApi     = require('./lib/auto-api')
 
 var app = stack(
+  //TODO: remove
   route('/badge', btcprogress()),
-  autoApi(api, views),
+  //the new badge with api
+  autoApi(api, views, {png: {iteration: badge}}),
   ecstatic(join(__dirname, 'static'))
 )
 
