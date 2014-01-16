@@ -34,9 +34,15 @@ they can be used via a web browser, but also by pipeing data into the view on st
 > node ./views/index.js iteration < iteration.json
 # lots of HTML
 ```
+# progress bar
 
+pipe output of iteration query into badge generation, get png data
+``` js
+node ./api/index.js iteration \
+  dominictarr feedopensource  \
+  1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu \
+  | node ./lib/badge.js > badge.png
+```
 This means you can work on the html offline,
 and get expected output for tests, etc.
-
-
 
