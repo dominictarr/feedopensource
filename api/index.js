@@ -16,10 +16,9 @@ function bcApi() {
 var api = exports
 
 api.funders = function (user, repo, issue, wallet, cb) {
-  var project, wallet
   get.all([
     ghApi('repos', user, repo, 'issues', issue, 'comments'),
-    bcApi('address', wallet),
+    bcApi('address', wallet)
   ], function (err, args) {
     if(err) return cb(err)
     cb(null, funders.apply(null, args))
@@ -29,7 +28,7 @@ api.funders = function (user, repo, issue, wallet, cb) {
 api.iterations = function (user, repo, cb) {
   get.all([
     ghApi('repos', user, repo, 'issues'),
-    ghApi('repos', user, repo, 'collaborators'),
+    ghApi('repos', user, repo, 'collaborators')
   ], function (err, data) {
     if(err) return cb(err)
     cb(null, iterations(data[0], data[1], user, repo))
