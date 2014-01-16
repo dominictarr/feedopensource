@@ -18,7 +18,8 @@
     "tape": "~2.3.2",
     "rc": "~0.3.2",
     "html-element": "https://github.com/dominictarr/html-element/archive/master.tar.gz",
-    "hyperscript": "~1.4.0"
+    "hyperscript": "~1.4.0",
+    "canvas-browserify": "~1.1.1"
   },
   "devDependencies": {
     "carpenter": "0.1",
