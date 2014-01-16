@@ -49,6 +49,7 @@ api.iteration = function (user, repo, wallet, cb) {
       if(data[i].wallet === wallet) {
         var iter = data[i]
         return api.funders(user, repo, ''+iter.number, wallet, function (err, funders) {
+          if(err) return cb(err)
           return cb(null, iteration(iter, funders))
         })
       }
