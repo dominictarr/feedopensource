@@ -1,10 +1,9 @@
-
 # run your own feedopensource project.
 
 If you want to run your own `feedopensource`
 project you need two things:
 
-1. bitcoin client (you don't need any bitcoins yet)
+1. bitcoin wallet (you don't need any bitcoins yet)
 2. github account
 3. a prototype of a cool opensource project.
 
@@ -18,9 +17,9 @@ to be a valid feedopensource iteration it only needs two things
 * A `feedopensource` progress bar badge.
 * links to other issues that are to be implemented in the iteration.
 
-each iteration MUST use a new bitcoin wallet. the progress bar represents
-the total deposits into that wallet, not the current balance.
-feel free to transfer that money into another wallet.
+each iteration MUST use a new bitcoin address. the progress bar represents
+the total deposits into that address, not the current balance.
+feel free to transfer that money into another address.
 
 links to tasks MUST be in the post that creates the issue,
 not in a comment. You can always edit an issue to add or remove links.
@@ -45,4 +44,3 @@ but do not have time/expertise to work on it.
 Currently `feedopensource` is very simple.
 It's up to you to decide how to use it best,
 and keep your funders satisfied.
-
