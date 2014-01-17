@@ -78,7 +78,7 @@ each part is separated, for ease of testing.
 use feedopensource as a cli tool, to get api data.
 
 ``` js
-> node ./lib/index.js iteration dominictarr feedopensource 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu
+> node ./api/index.js iteration dominictarr feedopensource 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu
 #lots of JSON
 ```
 you can get exactly the same data from the api.
@@ -94,7 +94,7 @@ they can be used via a web browser, but also by pipeing data into the view on st
 
 ``` js
 #save iteration.json to use while testing views/iteration.js
-> node ./lib/index.js iteration dominictarr feedopensource 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu > iteration.json
+> node ./api/index.js iteration dominictarr feedopensource 1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu > iteration.json
 > node ./views/index.js iteration < iteration.json
 # lots of HTML
 ```
