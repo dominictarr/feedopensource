@@ -36,7 +36,7 @@ module.exports = function (iteration) {
     h('div',
       h('ul',
         iteration.links.map(function (l) {
-          var url = l.url.replace('https://api.github.com', 'https://github.com')
+          var url = l.url.replace('https://api.github.com/repos', 'https://github.com')
           return h('li', a(url, url), l.closed ? h('bold',' (DONE)') : null)
         })
       )
