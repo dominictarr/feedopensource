@@ -64,7 +64,7 @@ module.exports = function (issues, collaborators, user, repo) {
       .map(function (m) {
         var matches = [].slice.call(m, 1)
         var issue = matches.pop()
-        var _username = matches.shift() || username
+        var _username = matches.shift() || user
         var _repo = matches.shift() || repo
         return {
           html_url: m,
