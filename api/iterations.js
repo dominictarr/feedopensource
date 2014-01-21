@@ -5,7 +5,7 @@ var regex   = /^iteration/i  // starts with 'Iteration'
 
 //var progressbar      = /https?:\/\/feedopensource\.com\/(?:badge|iteration\/\w+\/w+)\/(1[1-km-z]{33})\/(\d+(?:\.\d+))/
 var progressbar      =
-  /https?:\/\/feedopensource\.com\/iteration\/[0-z_]+\/[0-z_]+\/(1[1-km-z]{33}).png#(\d+(?:\.\d+))/
+  /https?:\/\/feedopensource\.com\/iteration\/[0-z_]+\/[0-z_]+\/(1|3[1-9A-HJ-NP-Za-km-z]{26,33}).png#(\d+(?:\.\d+))/
 var issueFull        = /https?:\/\/github.com\/([0-z_]+)\/([0-z_]+)\/issues\/(\d+)/
 var issueNum         = /\s#(\d+)\s/
 var issueUserNum     = /\s([0-z_]+)#(\d+)\s/
