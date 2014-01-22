@@ -6,11 +6,11 @@ var host    = config.host || 'feedopensource.com'
 var regex   = /^iteration/i  // starts with 'Iteration'
 
 var progressbar      = new RegExp(
-  "https?:\\/\\/" + host.replace(/\./, "\\.") + "\\/iteration\\/[0-z_]+\\/[0-z_]+\\/(1[1-km-z]{33}).png#(\\d+(?:\\.\\d+))")
-var issueFull        = /https?:\/\/github.com\/([0-z_]+)\/([0-z_]+)\/issues\/(\d+)/
+  "https?:\\/\\/" + host.replace(/\./, "\\.") + "\\/iteration\\/[0-z_-]+\\/[0-z_-]+\\/(1[1-km-z]{33}).png#(\\d+(?:\\.\\d+))")
+var issueFull        = /https?:\/\/github.com\/([0-z_-]+)\/([0-z_-]+)\/issues\/(\d+)/
 var issueNum         = /\s#(\d+)\s/
-var issueUserNum     = /\s([0-z_]+)#(\d+)\s/
-var issueUserRepoNum = /\s([0-z_]+)\/([0-z_]+)#(\d+)\s/
+var issueUserNum     = /\s([0-z_-]+)#(\d+)\s/
+var issueUserRepoNum = /\s([0-z_-]+)\/([0-z_-]+)#(\d+)\s/
 
 function matchAll(r, s) {
   var matches = []
