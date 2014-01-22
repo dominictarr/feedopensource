@@ -1,11 +1,12 @@
 var resolve = require('url').resolve
 var join    = require('path').join
+var config  = require('../config')
 
+var host    = config.host || 'feedopensource.com'
 var regex   = /^iteration/i  // starts with 'Iteration'
 
-//var progressbar      = /https?:\/\/feedopensource\.com\/(?:badge|iteration\/\w+\/w+)\/(1[1-km-z]{33})\/(\d+(?:\.\d+))/
-var progressbar      =
-  /https?:\/\/feedopensource\.com\/iteration\/[0-z_]+\/[0-z_]+\/(1[1-km-z]{33}).png#(\d+(?:\.\d+))/
+var progressbar      = new RegExp(
+  "https?:\\/\\/" + host.replace(/\./, "\\.") + "\\/iteration\\/[0-z_]+\\/[0-z_]+\\/(1[1-km-z]{33}).png#(\\d+(?:\\.\\d+))")
 var issueFull        = /https?:\/\/github.com\/([0-z_]+)\/([0-z_]+)\/issues\/(\d+)/
 var issueNum         = /\s#(\d+)\s/
 var issueUserNum     = /\s([0-z_]+)#(\d+)\s/
@@ -51,7 +52,7 @@ module.exports = function (issues, collaborators, user, repo) {
     if(!m) return
     issue.wallet = m[1]
     issue.target = m[2]
-    issue.feedopensource_url = 'https://feedopensource.com/iteration/' + user + '/' + repo + '/' + m[1]
+    issue.feedopensource_url = 'https://' + host + '/iteration/' + user + '/' + repo + '/' + m[1]
     issue.badge_url = issue.feedopensource_url + '.png#' + issue.target
 
     if(!wallets[issue.wallet]) {
