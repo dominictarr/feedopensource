@@ -81,10 +81,10 @@ module.exports = function (issues, collaborators, user, repo) {
       var total = 0, complete = 0
       issue.links.forEach(function (e) {
         total ++
-        if(!all[e])
+        if(!all[e.url])
           complete ++
 
-        e.closed = !all[e]
+        e.closed = !all[e.url]
       })
       issue.total = total
       issue.complete = complete
