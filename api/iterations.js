@@ -2,7 +2,7 @@ var resolve = require('url').resolve
 var join    = require('path').join
 var config  = require('../config')
 
-var host    = config.host || 'feedopensource.com'
+var host    = config.host
 var regex   = /^iteration/i  // starts with 'Iteration'
 
 var progressbar      = new RegExp(
