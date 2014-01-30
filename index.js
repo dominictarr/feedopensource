@@ -17,6 +17,7 @@ var views       = require('./views')
 
 var badge       = require('./lib/badge').getBadge
 var autoApi     = require('./lib/auto-api')
+var certs       = require('./lib/certs')
 
 var app = stack(
   //TODO: remove
@@ -27,13 +28,16 @@ var app = stack(
 )
 
 var secure = process.getuid() === 0
+var ca = certs(fs.readFileSync(config.ca, 'ascii'))
+
+console.log(ca)
 
 if(secure) {
-
+// var ca = fs.readFileSync(config.ca)
   https.createServer({
     cert: fs.readFileSync(config.cert),
     key : fs.readFileSync(config.key),
-    ca  : fs.readFileSync(config.ca),
+    ca  : ca,
   }, app).listen(443)
 
   http.createServer(redirect()).listen(80)
