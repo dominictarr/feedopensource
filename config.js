@@ -7,6 +7,7 @@ var home = process.env.SUDO_USER
 module.exports = require('rc')('feedopensource', {
   cert: join(home, '.feedopensource', 'server-cert.pem'),
   key : join(home, '.feedopensource', 'server-key.pem'),
+  ca  : join(home, '.feedopensource', 'ca-bundle.pem'),
   port: 8000, //development (non-secure) port
   host: "feedopensource.com"
 })

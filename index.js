@@ -31,8 +31,9 @@ var secure = process.getuid() === 0
 if(secure) {
 
   https.createServer({
-   cert: fs.readFileSync(config.cert),
-   key : fs.readFileSync(config.key)
+    cert: fs.readFileSync(config.cert),
+    key : fs.readFileSync(config.key),
+    ca  : fs.readFileSync(config.ca),
   }, app).listen(443)
 
   http.createServer(redirect()).listen(80)
