@@ -63,11 +63,12 @@ The prototype has progressed to iteration 2!
 
 Currently, feedopensource can:
 * track the state of a project on github,
-* represent this as a png (embeddable in github issues) and as a web page (
+* represent this as a png (embeddable in github issues) and as a web page
+  (https://feedopensource.com/iteration/dominictarr/feedopensource/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)
 * associate a bitcoin transaction with a github user.
 
 This is very simple, but with the support of iteration 1's 
-[funders](https://feedopensource.com/iteration/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2)
+[funders](https://feedopensource.com/iteration/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)
 
 ## Iteration 2
 
