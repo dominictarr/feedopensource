@@ -55,16 +55,27 @@ as *feedopensource* feeds itself with *feedopensource*
 
 ## The Prototype
 
-You are looking at a _very simple_ prototype.
+The prototype has progressed to iteration 2!
 
-[![progress bar](https://feedopensource.com/badge/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2)](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu)
+[![feedopensource badge](https://feedopensource.com/iteration/dominictarr/feedopensource/18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi.png#1.2)](
+  https://feedopensource.com/iteration/dominictarr/feedopensource/18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi
+)
 
-As deposited fund reach the target $1000 USD, this progress bar fills.
-then I will begin the [next iteration](https://github.com/dominictarr/feedopensource/issues/4).
+Currently, feedopensource can:
+* track the state of a project on github,
+* represent this as a png (embeddable in github issues) and as a web page (
+* associate a bitcoin transaction with a github user.
 
-### bitcoin
+This is very simple, but with the support of iteration 1's 
+[funders](https://feedopensource.com/iteration/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu/1.2)
 
-Transfer btc into `1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu`
+## Iteration 2
+
+Tasks for iteration 2 are listed [here](https://github.com/dominictarr/feedopensource/issues/20)
+
+### Bitcoin
+
+Transfer btc into `18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi` to fund iteration 2.
 
 Please post a comment [here](https://github.com/dominictarr/feedopensource/issues/4)
 with your transaction id.
@@ -72,7 +83,7 @@ with your transaction id.
 Not sure how to buy bitcoin? [Learn how you can buy bitcoin in your country](http://howtobuybitcoins.info)
 Also see [this issue](https://github.com/dominictarr/feedopensource/issues/5)
 
-### credit-card
+### Credit-card
 
 If you would rather fund this with normal money please
 comment with the amount you'd like to pay on
@@ -105,10 +116,4 @@ In the future you might use *feedopensource* like this:
   be added into github issues and readmes.
 * Users will have a way to associate a bitcoin wallet with a github account, so they can
   [claim their payment](https://github.com/dominictarr/feedopensource/issues/5)
-
-## Feed me
-
-Please fund the first iteration by making a payment to:
-[1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu](bitcoin:1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu) (check balance [here](https://blockchain.info/address/1PTAwipYpP63uNrcxfm5FewxRdZyar6ceu))
-and discuss here: [Iteration 1](https://github.com/dominictarr/feedopensource/issues/4)
 
