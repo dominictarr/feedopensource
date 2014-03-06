@@ -19,7 +19,8 @@
     "rc": "~0.3.2",
     "html-element": "https://github.com/dominictarr/html-element/archive/master.tar.gz",
     "hyperscript": "~1.4.0",
-    "canvas-browserify": "~1.1.1"
+    "canvas-browserify": "~1.1.1",
+    "qr-image": "~1.1.0"
   },
   "devDependencies": {
     "carpenter": "0.1",
