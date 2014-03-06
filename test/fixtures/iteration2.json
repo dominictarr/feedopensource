@@ -1,0 +1,702 @@
+{
+  "url": "https://api.github.com/repos/dominictarr/feedopensource/issues/20",
+  "labels_url": "https://api.github.com/repos/dominictarr/feedopensource/issues/20/labels{/name}",
+  "comments_url": "https://api.github.com/repos/dominictarr/feedopensource/issues/20/comments",
+  "events_url": "https://api.github.com/repos/dominictarr/feedopensource/issues/20/events",
+  "html_url": "https://github.com/dominictarr/feedopensource/issues/20",
+  "id": 25522271,
+  "number": 20,
+  "title": "Iteration 2",
+  "user": {
+    "login": "dominictarr",
+    "id": 259374,
+    "avatar_url": "https://gravatar.com/avatar/8225d7ca5e83a3f9f0bb89a61d5df72c?d=https%3A%2F%2Fidenticons.github.com%2F6b7bbeffb7d27119a32f65804f7af00a.png&r=x",
+    "gravatar_id": "8225d7ca5e83a3f9f0bb89a61d5df72c",
+    "url": "https://api.github.com/users/dominictarr",
+    "html_url": "https://github.com/dominictarr",
+    "followers_url": "https://api.github.com/users/dominictarr/followers",
+    "following_url": "https://api.github.com/users/dominictarr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dominictarr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dominictarr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dominictarr/subscriptions",
+    "organizations_url": "https://api.github.com/users/dominictarr/orgs",
+    "repos_url": "https://api.github.com/users/dominictarr/repos",
+    "events_url": "https://api.github.com/users/dominictarr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dominictarr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [],
+  "state": {
+    "funded": false,
+    "draft": false,
+    "complete": false,
+    "progress": 0.8333333333333334
+  },
+  "assignee": null,
+  "milestone": null,
+  "comments": 28,
+  "created_at": "2014-01-13T19:39:06Z",
+  "updated_at": "2014-03-06T06:08:21Z",
+  "closed_at": null,
+  "pull_request": {
+    "html_url": null,
+    "diff_url": null,
+    "patch_url": null
+  },
+  "body": "Okay, I wont know what is actually going in this until users have seen the result of iteration 1.\r\nI'm only creating this to test the code that detects iteration states.\r\n\r\n\r\n[![progress bar](https://feedopensource.com/iteration/dominictarr/feedopensource/18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi.png?rrrrr#1.2)](https://feedopensource.com/iteration/dominictarr/feedopensource/18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi#1.2)\r\n\r\nto fund: `18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi`\r\n\r\n* https://github.com/dominictarr/feedopensource/issues/40 (spending from mobile is more convienent for hot wallets)\r\n* cache properly https://github.com/dominictarr/feedopensource/issues/46 (make the github api client code more intelligent, storing stuff locally, and requesting individual issues to confirm their state)\r\n* decouple payment confirmation, to make it easy to use alternative currencies, such as DOGE or maybe even usd (https://github.com/dominictarr/feedopensource/issues/9#issuecomment-33108381)\r\n* UI changes to badge https://github.com/dominictarr/feedopensource/issues/33\r\n* UI changes to summary page: https://github.com/dominictarr/feedopensource/issues/41\r\n* put target on badge: https://github.com/dominictarr/feedopensource/issues/48\r\n* correct progress on iteration page: https://github.com/dominictarr/feedopensource/issues/49\r\n\r\nanything else?\r\n",
+  "owner": "dominictarr",
+  "repo": "feedopensource",
+  "wallet": "18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi",
+  "target": "1.2",
+  "feedopensource_url": "https://feedopensource.com/iteration/dominictarr/feedopensource/18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi",
+  "badge_url": "https://feedopensource.com/iteration/dominictarr/feedopensource/18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi.png#1.2",
+  "links": [
+    {
+      "html_url": [
+        "https://github.com/dominictarr/feedopensource/issues/40",
+        "dominictarr",
+        "feedopensource",
+        "40"
+      ],
+      "url": "https://api.github.com/repos/dominictarr/feedopensource/issues/40",
+      "closed": false
+    },
+    {
+      "html_url": [
+        "https://github.com/dominictarr/feedopensource/issues/46",
+        "dominictarr",
+        "feedopensource",
+        "46"
+      ],
+      "url": "https://api.github.com/repos/dominictarr/feedopensource/issues/46",
+      "closed": false
+    },
+    {
+      "html_url": [
+        "https://github.com/dominictarr/feedopensource/issues/9",
+        "dominictarr",
+        "feedopensource",
+        "9"
+      ],
+      "url": "https://api.github.com/repos/dominictarr/feedopensource/issues/9",
+      "closed": false
+    },
+    {
+      "html_url": [
+        "https://github.com/dominictarr/feedopensource/issues/33",
+        "dominictarr",
+        "feedopensource",
+        "33"
+      ],
+      "url": "https://api.github.com/repos/dominictarr/feedopensource/issues/33",
+      "closed": false
+    },
+    {
+      "html_url": [
+        "https://github.com/dominictarr/feedopensource/issues/41",
+        "dominictarr",
+        "feedopensource",
+        "41"
+      ],
+      "url": "https://api.github.com/repos/dominictarr/feedopensource/issues/41",
+      "closed": false
+    },
+    {
+      "html_url": [
+        "https://github.com/dominictarr/feedopensource/issues/48",
+        "dominictarr",
+        "feedopensource",
+        "48"
+      ],
+      "url": "https://api.github.com/repos/dominictarr/feedopensource/issues/48",
+      "closed": false
+    },
+    {
+      "html_url": [
+        "https://github.com/dominictarr/feedopensource/issues/49",
+        "dominictarr",
+        "feedopensource",
+        "49"
+      ],
+      "url": "https://api.github.com/repos/dominictarr/feedopensource/issues/49",
+      "closed": false
+    }
+  ],
+  "total": 7,
+  "complete": 0,
+  "funders": [
+    {
+      "login": "Raynos",
+      "id": 479538,
+      "avatar_url": "https://gravatar.com/avatar/d840cb1fb7e828284011cc08f40a1015?d=https%3A%2F%2Fidenticons.github.com%2Fde418baf42bdd628b8c46fbc140098a5.png&r=x",
+      "gravatar_id": "d840cb1fb7e828284011cc08f40a1015",
+      "url": "https://api.github.com/users/Raynos",
+      "html_url": "https://github.com/Raynos",
+      "followers_url": "https://api.github.com/users/Raynos/followers",
+      "following_url": "https://api.github.com/users/Raynos/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Raynos/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Raynos/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Raynos/subscriptions",
+      "organizations_url": "https://api.github.com/users/Raynos/orgs",
+      "repos_url": "https://api.github.com/users/Raynos/repos",
+      "events_url": "https://api.github.com/users/Raynos/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Raynos/received_events",
+      "type": "User",
+      "site_admin": false,
+      "txs": [
+        {
+          "result": 10000000,
+          "block_height": 282853,
+          "time": 1390893210,
+          "inputs": [
+            {
+              "prev_out": {
+                "n": 2,
+                "value": 3079387,
+                "addr": "1HU1J5HKr8MmRaV3v1xESJBPNA3yVZQfJ4",
+                "tx_index": 109940080,
+                "type": 0
+              }
+            },
+            {
+              "prev_out": {
+                "n": 0,
+                "value": 20000000,
+                "addr": "19N8qHRMcK2Yc4bvMjx12J2Pzo6wDoKtpj",
+                "tx_index": 109948257,
+                "type": 0
+              }
+            }
+          ],
+          "vout_sz": 2,
+          "relayed_by": "127.0.0.1",
+          "hash": "7e334ddcd649482e1f1672e09aaf2ec4f1ffe01e4c03642f86a7f4ef3ae5dc55",
+          "vin_sz": 2,
+          "tx_index": 109948263,
+          "ver": 1,
+          "out": [
+            {
+              "n": 0,
+              "value": 20000000,
+              "addr": "18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi",
+              "tx_index": 109948263,
+              "type": 0
+            },
+            {
+              "n": 1,
+              "value": 3059387,
+              "addr": "1A228dUxBU5JCkLm3Qnyswa8VSAJJRPmot",
+              "tx_index": 109948263,
+              "type": 0
+            }
+          ],
+          "size": 438
+        }
+      ],
+      "sum": 20000000
+    },
+    {
+      "login": "jhs",
+      "id": 17575,
+      "avatar_url": "https://gravatar.com/avatar/dc5c27144fe63c00375ee47da00c5621?d=https%3A%2F%2Fidenticons.github.com%2Fec160682cb3586d851071e80ec63d6c0.png&r=x",
+      "gravatar_id": "dc5c27144fe63c00375ee47da00c5621",
+      "url": "https://api.github.com/users/jhs",
+      "html_url": "https://github.com/jhs",
+      "followers_url": "https://api.github.com/users/jhs/followers",
+      "following_url": "https://api.github.com/users/jhs/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jhs/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jhs/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jhs/subscriptions",
+      "organizations_url": "https://api.github.com/users/jhs/orgs",
+      "repos_url": "https://api.github.com/users/jhs/repos",
+      "events_url": "https://api.github.com/users/jhs/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jhs/received_events",
+      "type": "User",
+      "site_admin": false,
+      "txs": [
+        {
+          "result": 20000000,
+          "block_height": 282828,
+          "time": 1390873940,
+          "inputs": [
+            {
+              "prev_out": {
+                "n": 0,
+                "value": 50000000,
+                "addr": "129AKYeogMfnjQYG3eL3JgWnsaV2VSVzj4",
+                "tx_index": 108522569,
+                "type": 0
+              }
+            }
+          ],
+          "vout_sz": 2,
+          "relayed_by": "127.0.0.1",
+          "hash": "a344749d6aff42703e943d6fdeef7b9e622c9b7552747b7713db242da5965edd",
+          "vin_sz": 1,
+          "tx_index": 109891505,
+          "ver": 1,
+          "out": [
+            {
+              "n": 0,
+              "value": 20000000,
+              "addr": "18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi",
+              "tx_index": 109891505,
+              "type": 0
+            },
+            {
+              "n": 1,
+              "value": 30000000,
+              "addr": "129AKYeogMfnjQYG3eL3JgWnsaV2VSVzj4",
+              "tx_index": 109891505,
+              "type": 0
+            }
+          ],
+          "size": 257
+        }
+      ],
+      "sum": 20000000
+    },
+    {
+      "unclaimed": true,
+      "txs": [
+        {
+          "result": 12346789,
+          "block_height": 283842,
+          "time": 1391384848,
+          "inputs": [
+            {
+              "prev_out": {
+                "n": 0,
+                "value": 41640000,
+                "addr": "196A7czbZum2nKNNwhHDeFcaGdacxPwfPB",
+                "tx_index": 68161951,
+                "type": 0
+              }
+            }
+          ],
+          "vout_sz": 2,
+          "relayed_by": "127.0.0.1",
+          "hash": "bda7ebd93513bfe69678170331f0926154f4eae459c597093602dfc2bd0e3f12",
+          "vin_sz": 1,
+          "tx_index": 111097505,
+          "ver": 1,
+          "out": [
+            {
+              "n": 0,
+              "value": 10000000,
+              "addr": "18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi",
+              "tx_index": 111097505,
+              "type": 0
+            },
+            {
+              "n": 1,
+              "value": 31640000,
+              "addr": "196A7czbZum2nKNNwhHDeFcaGdacxPwfPB",
+              "tx_index": 111097505,
+              "type": 0
+            }
+          ],
+          "size": 257
+        },
+        {
+          "result": 10000000,
+          "block_height": 283813,
+          "time": 1391372802,
+          "inputs": [
+            {
+              "prev_out": {
+                "n": 1,
+                "value": 79990000,
+                "addr": "1KEpBnziPgEiHryq8hyTyS8yEHLaS3Knru",
+                "tx_index": 106952853,
+                "type": 0
+              }
+            }
+          ],
+          "vout_sz": 2,
+          "relayed_by": "213.112.67.210",
+          "hash": "c0c300a15049e3d3eb23db9f2ad9ab8343f4d217f52e0a26b7a39780db794330",
+          "vin_sz": 1,
+          "tx_index": 111066863,
+          "ver": 1,
+          "out": [
+            {
+              "n": 0,
+              "value": 10000000,
+              "addr": "18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi",
+              "tx_index": 111066863,
+              "type": 0
+            },
+            {
+              "n": 1,
+              "value": 69980000,
+              "addr": "1KEpBnziPgEiHryq8hyTyS8yEHLaS3Knru",
+              "tx_index": 111066863,
+              "type": 0
+            }
+          ],
+          "size": 227
+        }
+      ],
+      "sum": 20000000,
+      "login": "**unclaimed**"
+    },
+    {
+      "login": "joates",
+      "id": 490654,
+      "avatar_url": "https://gravatar.com/avatar/60091579cd14b6052b33aa0072be84f9?d=https%3A%2F%2Fidenticons.github.com%2Fd52b7567532cac2a2e1c487986bfe76b.png&r=x",
+      "gravatar_id": "60091579cd14b6052b33aa0072be84f9",
+      "url": "https://api.github.com/users/joates",
+      "html_url": "https://github.com/joates",
+      "followers_url": "https://api.github.com/users/joates/followers",
+      "following_url": "https://api.github.com/users/joates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/joates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/joates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/joates/subscriptions",
+      "organizations_url": "https://api.github.com/users/joates/orgs",
+      "repos_url": "https://api.github.com/users/joates/repos",
+      "events_url": "https://api.github.com/users/joates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/joates/received_events",
+      "type": "User",
+      "site_admin": false,
+      "txs": [
+        {
+          "result": 13370,
+          "block_height": 284052,
+          "time": 1391485022,
+          "inputs": [
+            {
+              "prev_out": {
+                "n": 0,
+                "value": 32000000,
+                "addr": "1FLY928LZbGpsGP1mYR6irVjgqYdbH9vDm",
+                "tx_index": 111275397,
+                "type": 0
+              }
+            }
+          ],
+          "vout_sz": 2,
+          "relayed_by": "162.209.4.125",
+          "hash": "532ae78faea5db6e1aa9853493618db601e1bb01aa3e4c37751448d114ebeeb2",
+          "vin_sz": 1,
+          "tx_index": 111341833,
+          "ver": 1,
+          "out": [
+            {
+              "n": 0,
+              "value": 12346789,
+              "addr": "18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi",
+              "tx_index": 111341833,
+              "type": 0
+            },
+            {
+              "n": 1,
+              "value": 19643211,
+              "addr": "1Cxb7kZg4RvABFxVeuXh1F9KxsC4N1FWd6",
+              "tx_index": 111341833,
+              "type": 0
+            }
+          ],
+          "size": 258
+        },
+        {
+          "result": 4000000,
+          "block_height": 284120,
+          "time": 1391519049,
+          "inputs": [
+            {
+              "prev_out": {
+                "n": 1,
+                "value": 19643211,
+                "addr": "1Cxb7kZg4RvABFxVeuXh1F9KxsC4N1FWd6",
+                "tx_index": 111341833,
+                "type": 0
+              }
+            }
+          ],
+          "vout_sz": 2,
+          "relayed_by": "86.148.50.235",
+          "hash": "bd408bf50da0c1f62715579e71450a5116c4ad02d150c722a0b60778cec84565",
+          "vin_sz": 1,
+          "tx_index": 111415845,
+          "ver": 1,
+          "out": [
+            {
+              "n": 0,
+              "value": 13370,
+              "addr": "18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi",
+              "tx_index": 111415845,
+              "type": 0
+            },
+            {
+              "n": 1,
+              "value": 19619841,
+              "addr": "1KLrbAkbpwum3TnnXicJUhd5BuahMEA3Qi",
+              "tx_index": 111415845,
+              "type": 0
+            }
+          ],
+          "size": 225
+        }
+      ],
+      "sum": 12360159
+    },
+    {
+      "login": "ralphtheninja",
+      "id": 308049,
+      "avatar_url": "https://gravatar.com/avatar/845fa52df723d253516a80a86ffe1a29?d=https%3A%2F%2Fidenticons.github.com%2F95e7c6733a0a8c4a48236dad384dd3a0.png&r=x",
+      "gravatar_id": "845fa52df723d253516a80a86ffe1a29",
+      "url": "https://api.github.com/users/ralphtheninja",
+      "html_url": "https://github.com/ralphtheninja",
+      "followers_url": "https://api.github.com/users/ralphtheninja/followers",
+      "following_url": "https://api.github.com/users/ralphtheninja/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ralphtheninja/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ralphtheninja/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ralphtheninja/subscriptions",
+      "organizations_url": "https://api.github.com/users/ralphtheninja/orgs",
+      "repos_url": "https://api.github.com/users/ralphtheninja/repos",
+      "events_url": "https://api.github.com/users/ralphtheninja/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ralphtheninja/received_events",
+      "type": "User",
+      "site_admin": false,
+      "txs": [
+        {
+          "result": 10000000,
+          "block_height": 282926,
+          "time": 1390936613,
+          "inputs": [
+            {
+              "prev_out": {
+                "n": 1,
+                "value": 22465341,
+                "addr": "1HYmvU61669fvRxJNue9TUyihjAFB4HFER",
+                "tx_index": 109713833,
+                "type": 0
+              }
+            }
+          ],
+          "vout_sz": 2,
+          "relayed_by": "127.0.0.1",
+          "hash": "d46aedaf368f81e50137ff8771a5b49e9e2085cec0637f09b8027dc990224204",
+          "vin_sz": 1,
+          "tx_index": 110064637,
+          "ver": 1,
+          "out": [
+            {
+              "n": 0,
+              "value": 10000000,
+              "addr": "18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi",
+              "tx_index": 110064637,
+              "type": 0
+            },
+            {
+              "n": 1,
+              "value": 12455341,
+              "addr": "1HYmvU61669fvRxJNue9TUyihjAFB4HFER",
+              "tx_index": 110064637,
+              "type": 0
+            }
+          ],
+          "size": 259
+        }
+      ],
+      "sum": 10000000
+    },
+    {
+      "login": "RobbieClarken",
+      "id": 663161,
+      "avatar_url": "https://gravatar.com/avatar/a8e465c905f5ad94866395bec5587d9a?d=https%3A%2F%2Fidenticons.github.com%2Fe7a033c2bd6b0a21211f9ff22a016f10.png&r=x",
+      "gravatar_id": "a8e465c905f5ad94866395bec5587d9a",
+      "url": "https://api.github.com/users/RobbieClarken",
+      "html_url": "https://github.com/RobbieClarken",
+      "followers_url": "https://api.github.com/users/RobbieClarken/followers",
+      "following_url": "https://api.github.com/users/RobbieClarken/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RobbieClarken/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RobbieClarken/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RobbieClarken/subscriptions",
+      "organizations_url": "https://api.github.com/users/RobbieClarken/orgs",
+      "repos_url": "https://api.github.com/users/RobbieClarken/repos",
+      "events_url": "https://api.github.com/users/RobbieClarken/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RobbieClarken/received_events",
+      "type": "User",
+      "site_admin": false,
+      "txs": [
+        {
+          "result": 10000000,
+          "block_height": 283177,
+          "time": 1391074526,
+          "inputs": [
+            {
+              "prev_out": {
+                "n": 1,
+                "value": 18348640,
+                "addr": "1C9HFrDCzskANC8ym3XqwFdio9zBSernMP",
+                "tx_index": 110389339,
+                "type": 0
+              }
+            }
+          ],
+          "vout_sz": 2,
+          "relayed_by": "5.199.133.193",
+          "hash": "1a0fe73e0ac38d96f9f146fcc843abefced06a3cad29ebf12be89a4a54993645",
+          "vin_sz": 1,
+          "tx_index": 110399209,
+          "ver": 1,
+          "out": [
+            {
+              "n": 0,
+              "value": 8338640,
+              "addr": "1GitnUKU2PVJHSDxsYLGodp7VxD5nztMhP",
+              "tx_index": 110399209,
+              "type": 0
+            },
+            {
+              "n": 1,
+              "value": 10000000,
+              "addr": "18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi",
+              "tx_index": 110399209,
+              "type": 0
+            }
+          ],
+          "size": 226
+        }
+      ],
+      "sum": 10000000
+    },
+    {
+      "login": "binarykitchen",
+      "id": 177641,
+      "avatar_url": "https://gravatar.com/avatar/e113ffc49039a4e71fe98fe536789341?d=https%3A%2F%2Fidenticons.github.com%2Fd06323323c58f67cccd41fffa8c4f1df.png&r=x",
+      "gravatar_id": "e113ffc49039a4e71fe98fe536789341",
+      "url": "https://api.github.com/users/binarykitchen",
+      "html_url": "https://github.com/binarykitchen",
+      "followers_url": "https://api.github.com/users/binarykitchen/followers",
+      "following_url": "https://api.github.com/users/binarykitchen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/binarykitchen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/binarykitchen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/binarykitchen/subscriptions",
+      "organizations_url": "https://api.github.com/users/binarykitchen/orgs",
+      "repos_url": "https://api.github.com/users/binarykitchen/repos",
+      "events_url": "https://api.github.com/users/binarykitchen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/binarykitchen/received_events",
+      "type": "User",
+      "site_admin": false,
+      "txs": [
+        {
+          "result": 3639841,
+          "block_height": 284198,
+          "time": 1391559317,
+          "inputs": [
+            {
+              "prev_out": {
+                "n": 0,
+                "value": 31588166,
+                "addr": "1M2rd4ofhnaV6AnG6ALoBVYtWguLz3rCaE",
+                "tx_index": 106919951,
+                "type": 0
+              }
+            }
+          ],
+          "vout_sz": 2,
+          "relayed_by": "176.198.82.229",
+          "hash": "e19608d824601343af871a254fd9ce33ff8a07a2d1f1322bdff4c2230330e69e",
+          "vin_sz": 1,
+          "tx_index": 111541540,
+          "ver": 1,
+          "out": [
+            {
+              "n": 0,
+              "value": 27588166,
+              "addr": "18QH7SNR91fDFJXhR2GX1yQZNAof8hkC9q",
+              "tx_index": 111541540,
+              "type": 0
+            },
+            {
+              "n": 1,
+              "value": 4000000,
+              "addr": "18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi",
+              "tx_index": 111541540,
+              "type": 0
+            }
+          ],
+          "size": 226
+        }
+      ],
+      "sum": 4000000
+    },
+    {
+      "login": "clehner",
+      "id": 95347,
+      "avatar_url": "https://gravatar.com/avatar/02970f9bc81a4c8c3956912bf1eaa0e0?d=https%3A%2F%2Fidenticons.github.com%2F3d42353538c86da8d87fc105e973ed14.png&r=x",
+      "gravatar_id": "02970f9bc81a4c8c3956912bf1eaa0e0",
+      "url": "https://api.github.com/users/clehner",
+      "html_url": "https://github.com/clehner",
+      "followers_url": "https://api.github.com/users/clehner/followers",
+      "following_url": "https://api.github.com/users/clehner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/clehner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/clehner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/clehner/subscriptions",
+      "organizations_url": "https://api.github.com/users/clehner/orgs",
+      "repos_url": "https://api.github.com/users/clehner/repos",
+      "events_url": "https://api.github.com/users/clehner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/clehner/received_events",
+      "type": "User",
+      "site_admin": false,
+      "txs": [
+        {
+          "result": 0,
+          "block_height": 284212,
+          "time": 1391564790,
+          "inputs": [
+            {
+              "prev_out": {
+                "n": 0,
+                "value": 870000,
+                "addr": "1MFLR4Ksfq4fR3w5FyWqkMvpAspUsgyoja",
+                "tx_index": 101446311,
+                "type": 0
+              }
+            },
+            {
+              "prev_out": {
+                "n": 0,
+                "value": 350184514,
+                "addr": "1ApxwdHFFPuM3wUrrJkBqyCUy59yuaiC3n",
+                "tx_index": 102208529,
+                "type": 0
+              }
+            }
+          ],
+          "vout_sz": 2,
+          "relayed_by": "128.71.99.158",
+          "hash": "8d5ee79f2aae765a2477d252164ccc07389533abb16c236127f1d3ebf5ae2ba8",
+          "vin_sz": 2,
+          "tx_index": 111554936,
+          "ver": 1,
+          "out": [
+            {
+              "n": 0,
+              "value": 347394673,
+              "addr": "121j56d6iDeyhJFTP3yMNdi5k4nHoxdQVv",
+              "tx_index": 111554936,
+              "type": 0
+            },
+            {
+              "n": 1,
+              "value": 3639841,
+              "addr": "18oBEV9hFdDMEct9Ys2bSAuEY4bi2KSMHi",
+              "tx_index": 111554936,
+              "type": 0
+            }
+          ],
+          "size": 437
+        }
+      ],
+      "sum": 3639841
+    }
+  ],
+  "sum": 1,
+  "progress": 0.8333333333333334,
+  "status": "funding"
+}
