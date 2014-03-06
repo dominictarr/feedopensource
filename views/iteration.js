@@ -43,8 +43,8 @@ module.exports = function (iteration) {
     ),
 
     h('h3', 'Funders',
-        ' ('+iteration.sum.toPrecision(4) +'btc, '
-        + (100 * iteration.progress)
+        ' ('+iteration.sum.toPrecision(4) +' btc, '
+        + (100*iteration.progress).toPrecision(4)
         + '% funded)'
     ),
     h('div.row',
