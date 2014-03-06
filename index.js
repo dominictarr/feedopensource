@@ -16,6 +16,7 @@ var api         = require('./api')
 var views       = require('./views')
 
 var badge       = require('./lib/badge').getBadge
+var qrcode      = require('./lib/qr')
 var autoApi     = require('./lib/auto-api')
 var certs       = require('./lib/certs')
 
@@ -23,14 +24,12 @@ var app = stack(
   //TODO: remove
   route('/badge', btcprogress()),
   //the new badge with api
-  autoApi(api, views, {png: {iteration: badge}}),
+  autoApi(api, views, {png: {iteration: badge, qr: qrcode}}),
   ecstatic(join(__dirname, 'static'))
 )
 
 var secure = process.getuid() === 0
 var ca = certs(fs.readFileSync(config.ca, 'ascii'))
-
-console.log(ca)
 
 if(secure) {
 // var ca = fs.readFileSync(config.ca)

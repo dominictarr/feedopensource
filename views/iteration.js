@@ -30,7 +30,11 @@ module.exports = function (iteration) {
 
     h('h3', 'Funding', iteration.state.funded ? ' (Funded)' : ''),
     h('div', img(iteration.badge_url, null, '.badge')),
-    a('bitcoin:' + iteration.wallet, 'bitcoin: '+ iteration.wallet),
+    h('a',  {style: {float: 'right'}}, {href: 'bitcoin:' + iteration.wallet},
+      img('/qr/' + iteration.wallet + '.png', null, '.qr'),
+      iteration.wallet
+    ),
+//    a( + iteration.wallet, 'bitcoin: '+ iteration.wallet),
 
     h('h3', 'Tasks', iteration.state.complete ? '(Complete)' : ''),
     h('div',
