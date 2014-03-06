@@ -4,9 +4,9 @@ function setStatus (iteration) {
     funded: iteration.target <= iteration.sum,
     draft: !iteration.total,
     complete: iteration.total && (iteration.total <= iteration.complete),
-    progress: (iteration.complete || 0) / (iteration.total || 1)
+    progress: (iteration.sum || 0) / (iteration.target || 1)
   }
-  iteration.progress = (iteration.complete || 0) / (iteration.total || 1)
+  iteration.progress = (iteration.sum || 0) / (iteration.target || 1)
 
   iteration.status = (
       state.funded  && state.complete  ? 'complete'
